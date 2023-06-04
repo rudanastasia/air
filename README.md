@@ -63,15 +63,15 @@
             <ul class="menu__list">
               <li class="menu__item">
               <img src="#" alt="" class="menu__icon">
-              <a href="#" class="menu__title">Главная</div>
+              <a href="#" class="menu__title">Главная</a>
               </li>
               <li class="menu__item">
               <img src="#" alt="" class="menu__icon">
-              <a href="#" class="menu__title">Рейсы</div>
+              <a href="#" class="menu__title">Рейсы</a>
               </li>
               <li class="menu__item">
               <img src="#" alt="" class="menu__icon">
-              <a href="#" class="menu__title">О нас</div>
+              <a href="#" class="menu__title">О нас</a>
               </li>
             </ul>
           </nav>
