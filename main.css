@@ -1,6 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     background: #001821;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.hero {
+    position: absolute;
+    width: 1920px;
+    height: 1202px;
+    left: 0px;
+    top: 0px;
+
+    background: url(http://rudanastasia.github.io/air/img/hero.png);
+}
+
+.container {
+    margin: 0 auto;
+    width: 1656px;
+}
+
+.header {
+    position: absolute;
+    width: 1141px;
+    height: 123.36px;
+    left: 390px;
+    top: 26.64px;
+    margin-bottom: 150px;
+}
+
+.logo__img {
+    position: absolute;
+    width: 85px;
+    height: 36px;
+    left: 0;
+    top: 1px;
+}
+
+.menu {
+    position: absolute;
+    width: 313px;
+    height: 19px;
+    left: 165px;
+    top: 14px;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.menu__link {
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contacts__phone {
+    position: absolute;
+    width: 191px;
+    height: 35px;
+    left: 954px;
+    top: 1px;
+    right: 389px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown__title {
+    position: absolute;
+    width: 97px;
+    height: 18px;
+    left: 1043px;
+    top: 28px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+}
+
+.hero__title {
+    position: absolute;
+    width: 511px;
+    height: 197px;
+    left: 390px;
+    top: 196px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero__subtitle {
+    position: absolute;
+width: 196px;
+height: 20px;
+left: 391px;
+top: 401px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
+
+display: flex;
+align-items: center;
+}
+
+.btn {
+    background: #F5170E;
+    border-radius: 35px;
+    position: absolute;
+width: 88px;
+height: 19px;
+left: 392px;
+top: 472px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-transform: uppercase;
+text-decoration: none;
+padding: 18px 40px
 }
