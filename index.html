@@ -110,7 +110,6 @@
                 </ul>
             </div>
         </section> 
-
         <section class="news">
             <div class="container">
                 <h2 class="news__title">Новости и акции</h2>
