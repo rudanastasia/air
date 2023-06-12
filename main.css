@@ -28,14 +28,28 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 0;
+}
+
+.main-page-wrapper {
+    background: url(http://rudanastasia.github.io/air/img/hero.png), url(http://rudanastasia.github.io/air/img/about.png);
+    min-height: 2768px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom left;
+    background-color: #001821;
+}
+
 .hero {
     position: absolute;
     width: 1920px;
     height: 1202px;
     left: 0px;
     top: 0px;
-
-    background: url(http://rudanastasia.github.io/air/img/hero.png);
 }
 
 .container {
@@ -86,8 +100,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 191px;
     height: 35px;
     left: 954px;
-    top: 1px;
-    right: 389px;
+    top: 0px;
+    right: 952px;
     text-decoration: none;
     font-family: 'Open Sans';
     font-style: normal;
@@ -104,14 +118,11 @@ h1, h2, h3, h4, h5, h6 {
     height: 18px;
     left: 1043px;
     top: 28px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
-    /* identical to box height */
-
     display: flex;
     align-items: center;
     text-decoration-line: underline;
@@ -135,40 +146,563 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__subtitle {
     position: absolute;
-width: 196px;
-height: 20px;
-left: 391px;
-top: 401px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 20px;
-/* identical to box height, or 111% */
-
-display: flex;
-align-items: center;
+    width: 196px;
+    height: 20px;
+    left: 391px;
+    top: 417px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .btn {
     background: #F5170E;
     border-radius: 35px;
     position: absolute;
-width: 88px;
-height: 19px;
-left: 392px;
-top: 472px;
+    width: 166px;
+    height: 56px;
+    left: 392px;
+    top: 472px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 40px
+}
 
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 25px;
-/* identical to box height */
+.btn.btn--active:hover {
+    background-color: white;
+    border-color: rebeccapurple;
+    color: #F5170E;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
 
-display: flex;
-align-items: center;
-text-transform: uppercase;
-text-decoration: none;
-padding: 18px 40px
+.tours {
+    position: absolute;
+    width: 1140px;
+    height: 549px;
+    left: 389px;
+    top: 775px;
+    padding-bottom: 720px;
+}
+
+.tour__title {
+    margin-bottom: 45px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.flame {
+    position: absolute;
+    width: 21px;
+    height: 28px;
+    left: 285px;
+    top: 14px;
+}
+
+.offers__item {
+    min-height: 454px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 28px;
+    width: 360px;
+}
+
+.offers__item:last-child {
+    margin-right: 0;
+}
+
+.offers__img {
+    min-height: 162px;
+    margin-bottom: 28px;
+}
+
+.offers__title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    padding-left: 22px;
+}
+
+.offers__date {
+    display: flex;
+}
+
+.offers__date__cell {
+    padding-right: 35px;
+    display: flex;
+}
+
+.offers__days {
+    padding-left: 13px;
+    width: 99px;
+    height: 22px;
+    left: 453px;
+    top: 1108px;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.offers__breakfast {
+    padding-left: 13px;
+    width: 73px;
+    height: 21px;
+    left: 616px;
+    top: 1108px;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.breakfast__img {
+    width: 36px;
+    height: 26px;
+    left: 571px;
+    top: 1106px;
+}
+
+.days__img {
+    width: 26px;
+    height: 26px;
+    left: 417px;
+    top: 1106px;
+    margin-left: 24px;
+}
+
+.offers__description {
+    padding: 18px 21px;
+    color: #303030;
+}
+
+.tours__buttn {
+    background: #F5170E;
+    border-radius: 35px;
+    width: 130px;
+    height: 55px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 40px;
+    margin-bottom: 20px;
+    margin-left: 27px;
+    position: absolute;
+    top: 466px;
+    padding: 23px 23px;
+}
+
+.tours__buttn.tours__buttn--active:hover {
+    background-color: white;
+    border-color: rebeccapurple;
+    color: #F5170E;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.news {
+    position: absolute;
+    left: 1px;
+    top: 7px;
+    margin-bottom: 55px;
+}
+
+.news__list {
+    display: flex;
+    position: absolute;
+    width: 1220px;
+    height: 600px;
+    left: 389px;
+    top: 1534px;
+}
+
+.news__item {
+    width: 555px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 28px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.news__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__content {
+    padding-left: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 214px;
+    padding: 25px 30px;
+    min-height: 140px;
+}
+
+.news__title {
+    width: 325px;
+    height: 49px;
+    left: 390px;
+    top: 1440px;
+    position: absolute;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.news__img {
+    width: 557px;
+    height: 394px;
+    left: 389px;
+    top: 1551px;
+    border-radius: 5px;
+}
+
+.news__date {
+    font-size: 15px;
+    top: 13px;
+    position: absolute;
+    left: 30px;
+    text-transform: lowercase;
+}
+
+.news__subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 43px;
+    margin-bottom: 15px;
+    margin-top: 11px;
+    position: absolute;
+    top: 33px;
+}
+
+.news__description {
+    width: 546px;
+    height: 21px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 87px;
+}
+
+.about {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    width: 1139px;
+    height: 552px;
+    left: 389px;
+    top: 2175px;
+}
+
+.pager {
+    text-align: center;
+    position: absolute;
+    width: 375px;
+    height: 53px;
+    left: 771px;
+    top: 1986px;
+}
+
+.pager__diplay, .pager__list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__display {
+    margin-right: 26px;
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    left: 1px;
+    top: 7px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pager__list {
+    left: 149px;
+    width: 250px;
+    position: absolute;
+}
+
+.pager__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__item--active .pager__link {
+    background-color: white;
+    color: #F5170E;
+}
+
+.pager__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.about__content:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 488px;
+    height: 502px;
+    background: url(http://rudanastasia.github.io/air/img/gates.png) center center / cover no-repeat;
+}
+
+.about__description {
+    background: url(http://rudanastasia.github.io/air/img/mountains.png) center center / cover no-repeat;
+    width: 781px;
+    height: 453px;
+    padding: 155px 84px;
+    display: inline-block;
+    margin-left: -136px;
+    margin-top: 95px;
+}
+
+.about__title {
+    width: 103px;
+    height: 49px;
+    left: 824px;
+    top: 2342px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 163px;
+    left: 437px;
+}
+
+.about__description-text {
+    width: 502px;
+    height: 135px;
+    left: 824px;
+    top: 2428px;
+    margin-bottom: 42px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.about__description-text p {
+    margin-bottom: 20px;
+}
+
+.about__description-text p:last-child {
+    margin-bottom: 0;
+}
+
+.bttn {
+    width: 166px;
+    height: 57px;
+    left: 824px;
+    top: 2606px;
+    background: #F5170E;
+    border-radius: 35px;
+    left: 864px;
+    top: 2624px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 37px;
+}
+ 
+.bttn.bttn--active:hover {
+    background-color: white;
+    border-color: rebeccapurple;
+    color: #F5170E;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
+.footer-container__content {
+    border-top: 1px solid #001821;
+}
+
+.footer {
+    height: 152px;
+    position: relative;
+
+}
+
+.footer__container {
+    position: absolute;
+    width: 1142px;
+    height: 92.64px;
+    left: 389px;
+    top: 2817px;
+}
+
+.dropdown__footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    margin-left: 982px;
+    margin-top: -51px;
+}
+
+.socials {
+    top: 53px;
+    right: 300px;
+    margin-left: 700px;
+    margin-top: 7px;
+}
+
+.socials__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    height: 50px;
+    left: 1092px;
+    top: 2833px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+
+.socials__item--icon--telegram .socials__link {
+    background-image: url("http://rudanastasia.github.io/air/img/telegram.png");
+}
+    
+.socials__item--icon--telegram .socials__link:hover {
+    background-image: url("http://rudanastasia.github.io/air/img/telegram-hover.png");
+}
+    
+.socials__item--icon--vk .socials__link {
+    background-image: url("http://rudanastasia.github.io/air/img/vk.png");
+}
+    
+.socials__item--icon--vk .socials__link:hover {
+    background-image: url("http://rudanastasia.github.io/air/img/vk-hover.png");
+}
+    
+.socials__item--icon--facebook .socials__link {
+    background-image: url("http://rudanastasia.github.io/air/img/f.png");
+}
+    
+.socials__item--icon--facebook .socials__link:hover {
+    background-image: url("http://rudanastasia.github.io/air/img/f-hover.png");
+}
+    
+.socials__item--icon--instagram .socials__link {
+    background-image: url("http://rudanastasia.github.io/air/img/in.png");
+}
+    
+.socials__item--icon--instagram .socials__link:hover {
+    background-image: url("http://rudanastasia.github.io/air/img/in-hover.png");
+}
+
+.contacts__footer {
+    position: absolute;
+    width: 191px;
+    height: 35px;
+    left: 954px;
+    top: 19px;
+    right: 389px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
 }
