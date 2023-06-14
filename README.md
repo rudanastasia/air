@@ -196,7 +196,7 @@
                         </li>
                     </ul>                    
                         <address class="contacts">
-                            <div class="dropdown__footer">Бесплатный звонок по России</в>
+                            <div class="dropdown__footer">Бесплатный звонок по России</div>
                             <a href="tel:+78007003030" class="contacts__footer">8 800 700 30 30</a>
                         </address>
                 </div>
