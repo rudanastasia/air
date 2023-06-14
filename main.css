@@ -679,22 +679,23 @@ p {
     width: 36px;
     height: 36px;
     background: center center no-repeat;
+    position: relative;
 }
-
+ 
 .socials__item--icon--telegram .socials__link {
     background-image: url("http://rudanastasia.github.io/air/img/telegram.png");
 }
     
 .socials__item--icon--telegram .socials__link:hover {
-    transform: scale(1.2);
+    background-image: url("http://rudanastasia.github.io/air/img/t-hover.png");
 }
-    
+
 .socials__item--icon--vk .socials__link {
     background-image: url("http://rudanastasia.github.io/air/img/vk.png");
 }
     
 .socials__item--icon--vk .socials__link:hover {
-    transform: scale(1.2);
+    background-image: url("http://rudanastasia.github.io/air/img/vk-hover.png");
 }
     
 .socials__item--icon--facebook .socials__link {
@@ -702,7 +703,7 @@ p {
 }
     
 .socials__item--icon--facebook .socials__link:hover {
-    transform: scale(1.2);
+    background-image: url("http://rudanastasia.github.io/air/img/f-hover.png");
 }
     
 .socials__item--icon--instagram .socials__link {
@@ -710,7 +711,7 @@ p {
 }
     
 .socials__item--icon--instagram .socials__link:hover {
-    transform: scale(1.2);
+    background-image: url("http://rudanastasia.github.io/air/img/in-hover.png");
 }
 
 .contacts__footer {
