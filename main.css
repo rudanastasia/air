@@ -583,6 +583,7 @@ p {
 
 .about__description-text p {
     margin-bottom: 20px;
+    color: black;
 }
 
 .about__description-text p:last-child {
