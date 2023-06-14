@@ -95,6 +95,10 @@ p {
     text-decoration: none;
 }
 
+.menu__link:hover {
+    color: #F5170E
+}
+
 .contacts__phone {
     position: absolute;
     width: 191px;
@@ -112,12 +116,16 @@ p {
     align-items: center;
 }
 
+.contacts__phone:hover {
+    color: #F5170E
+}
+
 .dropdown__title {
     position: absolute;
     width: 97px;
     height: 18px;
     left: 1043px;
-    top: 28px;
+    top: 30px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -126,6 +134,7 @@ p {
     display: flex;
     align-items: center;
     text-decoration-line: underline;
+    text-decoration: none;
 }
 
 .hero__title {
@@ -220,12 +229,13 @@ p {
 }
 
 .offers__item {
-    min-height: 454px;
+    min-height: 450px;
     background: #FFFFFF;
     border-radius: 4px;
     display: inline-block;
-    margin-right: 28px;
+    margin-right: 25px;
     width: 360px;
+    margin-top: 8px;
 }
 
 .offers__item:last-child {
@@ -241,9 +251,9 @@ p {
     color: #000000;
     font-weight: 700;
     font-size: 24px;
-    line-height: 22px;
-    margin-bottom: 30px;
-    padding-left: 22px;
+    line-height: 13px;
+    margin-bottom: 29px;
+    padding-left: 21px;
 }
 
 .offers__date {
@@ -251,7 +261,8 @@ p {
 }
 
 .offers__date__cell {
-    padding-right: 35px;
+    padding-right: 24px;
+    padding-left: 2px;
     display: flex;
 }
 
@@ -303,8 +314,12 @@ p {
 }
 
 .offers__description {
-    padding: 18px 21px;
+    padding: 23px 19px;
     color: #303030;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
 }
 
 .tours__buttn {
@@ -323,10 +338,10 @@ p {
     text-decoration: none;
     padding: 18px 40px;
     margin-bottom: 20px;
-    margin-left: 27px;
+    margin-left: 23px;
     position: absolute;
-    top: 466px;
-    padding: 23px 23px;
+    top: 470px;
+    padding: 25px 28px;
 }
 
 .tours__buttn.tours__buttn--active:hover {
@@ -364,7 +379,7 @@ p {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-right: 28px;
+    margin-right: 26px;
     overflow: hidden;
     border-radius: 4px;
     margin-top: 10px;
@@ -390,8 +405,8 @@ p {
 .news__title {
     width: 325px;
     height: 49px;
-    left: 390px;
-    top: 1440px;
+    left: 388px;
+    top: 1444px;
     position: absolute;
     font-family: 'Open Sans';
     font-style: normal;
@@ -411,10 +426,10 @@ p {
 }
 
 .news__date {
-    font-size: 15px;
-    top: 13px;
+    font-size: 14px;
+    top: 18px;
     position: absolute;
-    left: 30px;
+    left: 28px;
     text-transform: lowercase;
 }
 
@@ -423,11 +438,11 @@ p {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 43px;
+    line-height: 36px;
     margin-bottom: 15px;
-    margin-top: 11px;
+    margin-top: 12px;
     position: absolute;
-    top: 33px;
+    top: 38px;
 }
 
 .news__description {
@@ -441,7 +456,7 @@ p {
     display: flex;
     align-items: flex-start;
     position: absolute;
-    top: 87px;
+    top: 91px;
 }
 
 .about {
@@ -459,8 +474,8 @@ p {
     position: absolute;
     width: 375px;
     height: 53px;
-    left: 771px;
-    top: 1986px;
+    left: 769px;
+    top: 1990px;
 }
 
 .pager__diplay, .pager__list {
@@ -493,6 +508,11 @@ p {
 .pager__item {
     display: inline-block;
     vertical-align: middle;
+}
+
+.pager__item:hover {
+    background-color: #F5170E;
+    border-radius: 50%;
 }
 
 .pager__item--active .pager__link {
@@ -604,13 +624,14 @@ p {
     line-height: 19px;
 }
 .footer-container__content {
-    border-top: 1px solid #001821;
+    border-top: 1px solid #233a42;
+    width: 1142px;
 }
 
 .footer {
     height: 152px;
     position: relative;
-
+    margin-top: 45px;
 }
 
 .footer__container {
@@ -618,7 +639,7 @@ p {
     width: 1142px;
     height: 92.64px;
     left: 389px;
-    top: 2817px;
+    top: 2781px;
 }
 
 .dropdown__footer {
@@ -626,7 +647,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
-    margin-left: 982px;
+    margin-left: 977px;
     margin-top: -51px;
 }
 
@@ -705,4 +726,8 @@ p {
     line-height: 35px;
     display: flex;
     align-items: center;
+}
+
+.contacts__footer:hover {
+    color: #F5170E;
 }
