@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Услуги Air Asia</title>
+    <title>Авиакомпания Air Asia</title>
 </head>
 <body>
-    <div class="wrapper">
-        <section class="top-line">
-            <div class="container top-line__container">
+    <div class="wrapper main-page-wrapper">
+        <section class="hero">
+            <div class="container">
              <header class="header">
                 <a href="/" class="logo">
                     <img src="http://rudanastasia.github.io/air/img/logo.png" alt="Air Asia logo" class="logo__img">
@@ -33,47 +33,106 @@
                         <contacts class="dropdown__title">График работы</contacts>
                     </address>
              </header>
-             <h1 class="page__title">Услуги</h1>
-             <nav class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Главная</a>
-                </li>
-                <li class="breadcrumbs__item breadcrumbs__item--active">
-                    <a href="#" class="breadcrumbs__link">Услуги</a>
-                </li>
-             </nav>
-            </div>   
+             <div class="hero__content">
+                <div class="hero__text-section">
+                    <h1 class="hero__title">Авторские туры по Азии</h1>
+                    <p class="hero__subtitle">Открой для себя Азию</p>
+                    <a href="#" class="btn btn--active">Подробнее</a>
+                </div>
+             </div>
+            </div>            
         </section>
-        <main class="page-content">
+        <section class="tours">
             <div class="container">
-                <ul class="services">
-                    <li class="services__item service">
-                        <div class="servisec__img">
-                            <img src="http://rudanastasia.github.io/air/img/waterfall.png" alt="Водопад Янг-бей" class="servise__img-elem">
+                <h2 class="tour__title">Горящие туры</h2>
+                <img src="http://rudanastasia.github.io/air/img/flame.png" alt="flame" class="flame">
+                <ul class="offers__list">
+                    <li class="offers__item">
+                        <div class="offers__img">
+                            <img src="http://rudanastasia.github.io/air/img/river.png" alt="Таиланд" class="offer__img">
                         </div>
-                        <div class="service__content">
-                            <h2 class="service__title">Водопад Янг-бей</h2>
-                            <div class="service__description">
-                                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                        <div class="offers__content">
+                            <h3 class="offers__title">Таиланд</h3>
+                            <div class="offers__date">
+                                <div class="offers__date__cell">
+                                    <img src="http://rudanastasia.github.io/air/img/calendar.png" alt="days" class="days__img">
+                                    <div class="offers__days">7-12 ночей</div>
+                                </div>
+                                <div class="offers__date__cell">
+                                    <img src="http://rudanastasia.github.io/air/img/meal.png" alt="days" class="breakfast__img">
+                                    <div class="offers__breakfast">Завтраки</div>
+                                </div>
                             </div>
-                            <a href="#" class="btn__service btn__service--active">Подробнее</a>
+                            <div class="offers__description">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</div>
+                            <a href="#" class="tours__buttn tours__buttn--active">Смотреть</a>
                         </div>
                     </li>
-                    <li class="services__item service services__item service--act">
-                        <div class="servisec__img">
-                            <img src="http://rudanastasia.github.io/air/img/monkeys.png" alt="Остров обезьян" class="servise__img-elem">
+                    <li class="offers__item">
+                        <div class="offers__img">
+                            <img src="http://rudanastasia.github.io/air/img/pool.png" alt="Бали">
                         </div>
-                        <div class="service__content">
-                            <h2 class="service__title">Остров обезьян</h2>
-                            <div class="service__description">
-                                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                        <div class="offers__content">
+                            <h3 class="offers__title">Бали</h3>
+                            <div class="offers__date">
+                                <div class="offers__date__cell">
+                                    <img src="http://rudanastasia.github.io/air/img/calendar.png" alt="days" class="days__img">
+                                    <div class="offers__days">7-12 ночей</div>
+                                </div>
+                                <div class="offers__date__cell">
+                                    <img src="http://rudanastasia.github.io/air/img/meal.png" alt="days" class="breakfast__img">
+                                    <div class="offers__breakfast">Завтраки</div>
+                                </div>
                             </div>
-                            <a href="#" class="btn__service btn__service--active">Подробнее</a>
+                            <div class="offers__description">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</div>
+                            <a href="#" class="tours__buttn tours__buttn--active">Смотреть</a>
+                        </div>
+                    </li>
+                    <li class="offers__item">
+                        <div class="offers__img">
+                            <img src="http://rudanastasia.github.io/air/img/ocean.png" alt="Индонезия">
+                        </div>
+                        <div class="offers__content">
+                            <h3 class="offers__title">Индонезия</h3>
+                            <div class="offers__date">
+                                <div class="offers__date__cell">
+                                    <img src="http://rudanastasia.github.io/air/img/calendar.png" alt="days" class="days__img">
+                                    <div class="offers__days">7-12 ночей</div>
+                                </div>
+                                <div class="offers__date__cell">
+                                    <img src="http://rudanastasia.github.io/air/img/meal.png" alt="days" class="breakfast__img">
+                                    <div class="offers__breakfast">Завтраки</div>
+                                </div>
+                            </div>
+                            <div class="offers__description">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</div>
+                            <a href="#" class="tours__buttn tours__buttn--active">Смотреть</a>
                         </div>
                     </li>
                 </ul>
-                <div class="pager pager--service">
-                    <div class="pager__display pager__display--service">Страница 1 из 7</div>
+            </div>
+        </section> 
+        <section class="news">
+            <div class="container">
+                <h2 class="news__title">Новости и акции</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <img src="http://rudanastasia.github.io/air/img/plain.png" alt="Новый год в Тайланде" class="news__img">
+                        <div class="news__content">
+                          <time class="news__date">Декабрь 2019</time>
+                          <div class="news__subtitle">Дешевые путевки на Новый год!</div>
+                          <div class="news__description">Проведи Новый год в Тайланде</div>
+                        </div>
+                    </li>
+                    <li class="news__item">
+                        <img src="http://rudanastasia.github.io/air/img/surfer.png" alt="Акция для серфенгистов" class="news__img">
+                        <div class="news__content">
+                            <time class="news__date">Декабрь 2019</time>
+                          <div class="news__subtitle">Акция для серфенгистов!</div>
+                          <div class="news__description">В сезон больших волн скидка на путевку в Тайланд на остров для серфенгистов. Удачного пути!</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pager">
+                    <div class="pager__display">Страница 1 из 7</div>
                     <ul class="pager__list">
                         <li class="pager__item pager__item--active"><a href="#" class="pager__link">1</a></li>
                         <li class="pager__item"><a href="#" class="pager__link">2</a></li>
@@ -85,57 +144,27 @@
                     </ul>
                 </div>
             </div>
-        </main>
-        <section class="partners">
+        </section>
+
+        <section class="about">
             <div class="container">
-                <h2 class="partners__title">Партнеры</h2>
-                <ul class="partners__list">
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/pobeda.png" alt="Победа">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/s7.png" alt="S7" class="partners__seven">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/lets-fly.png" alt="Слетать" class="partners__lets">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/lufthansa.png" alt="Lufthansa" class="partners__lufthansa">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/airbaltic.png" alt="AirBaltic" class="partners__airbaltic">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/pegasus.png" alt="Pegasus" class="partners__pegasus">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/ural.png" alt="UralAirlines" class="partners__ural">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="#" class="partners__link">
-                            <img src="http://rudanastasia.github.io/air/img/pegas.png" alt="Pegas" class="partners__pegas">
-                        </a>
-                    </li>
-                </ul>
+                <div class="about__content">
+                    <div class="about__description">
+                        <h2 class="about__title">О нас</h2>
+                        <div class="about__description-text">
+                            <p>
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                            </p>
+                        </div>
+                        <a href="#" class="bttn bttn--active">Подробнее</a>
+                    </div>
+                            
+                </div>
             </div>
         </section>
-        <footer class="inner-footer">
-            <div class="container inner-footer__container">
-                <div class="footer footer-container__section">
+        <footer class="footer__container">
+            <div class="container footer-container__content">
+                <div class="footer">
                     <a href="/" class="logo">
                         <img src="http://rudanastasia.github.io/air/img/logo.png" alt="Air Asia logo" class="logo__img">
                     </a>
@@ -145,7 +174,7 @@
                                 <a href="#" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Услуги</a>
+                                <a href="https://rudanastasia.github.io/air/services.html" class="menu__link">Услуги</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">Отзывы</a>
