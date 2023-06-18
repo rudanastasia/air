@@ -1,0 +1,79 @@
+.header {
+    position: relative;
+    width: 1141px;
+    height: 123.36px;
+    left: 269px;
+    top: 26.64px;
+    margin-bottom: 150px;
+}
+
+.logo__img {
+    position: relative;
+    width: 85px;
+    height: 36px;
+    left: 0;
+    top: 1px;
+}
+
+.menu {
+    position: relative;
+    width: 313px;
+    height: 19px;
+    left: 165px;
+    top: -24px;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.menu__link {
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: #F5170E
+}
+
+.contacts__phone {
+    position: relative;
+    width: 191px;
+    height: 35px;
+    left: 951px;
+    top: -56px;
+    right: 952px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__phone:hover {
+    color: #F5170E
+}
+
+.dropdown__title {
+    position: relative;
+    width: 97px;
+    height: 18px;
+    left: 1043px;
+    top: -62px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    text-decoration: none;
+}
