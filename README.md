@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./normalize.css">
     <title>Авиакомпания Air Asia</title>
 </head>
 <body>
@@ -174,7 +175,7 @@
                                 <a href="#" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Услуги</a>
+                                <a href="https://rudanastasia.github.io/air/services.html" class="menu__link">Услуги</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">Отзывы</a>
