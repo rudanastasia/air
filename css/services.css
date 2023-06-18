@@ -245,7 +245,7 @@
 .inner-footer__container {
     padding: 39px 0;
     position: relative;
-    width: 1920px;
+    width: 100%;
     height: 132px;
     left: 391px;
 }
