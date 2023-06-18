@@ -163,7 +163,7 @@ img {
     width: 196px;
     height: 20px;
     left: 391px;
-    top: 417px;
+    top: 434px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -180,7 +180,7 @@ img {
     width: 166px;
     height: 56px;
     left: 392px;
-    top: 472px;
+    top: 511px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -686,7 +686,7 @@ img {
 .socials {
     top: -59px;
     right: 300px;
-    margin-left: 996px;
+    margin-left: 964px;
     margin-top: 7px;
     position: relative;
 }
