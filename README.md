@@ -12,13 +12,13 @@
         <section class="hero">
             <div class="container">
              <header class="header">
-                <a href="/" class="logo">
+                <a href="https://rudanastasia.github.io/air/" class="logo">
                     <img src="http://rudanastasia.github.io/air/img/logo.png" alt="Air Asia logo" class="logo__img">
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="/" class="menu__link">Главная</a>
+                            <a href="https://rudanastasia.github.io/air/" class="menu__link">Главная</a>
                         </li>
                         <li class="menu__item">
                             <a href="https://rudanastasia.github.io/air/services.html" class="menu__link">Услуги</a>
@@ -145,7 +145,6 @@
                 </div>
             </div>
         </section>
-
         <section class="about">
             <div class="container">
                 <div class="about__content">
@@ -165,13 +164,13 @@
         <footer class="footer__container">
             <div class="container footer-container__content">
                 <div class="footer">
-                    <a href="/" class="logo">
+                    <a href="https://rudanastasia.github.io/air/" class="logo">
                         <img src="http://rudanastasia.github.io/air/img/logo.png" alt="Air Asia logo" class="logo__img">
                     </a>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
+                                <a href="https://rudanastasia.github.io/air/" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="https://rudanastasia.github.io/air/services.html" class="menu__link">Услуги</a>
