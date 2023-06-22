@@ -92,14 +92,14 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
+    display: inline-block;
 }
 
 .flame {
-    /*position: absolute;*/
     width: 21px;
     height: 28px;
-    left: 285px;
-    top: 14px;
+    display: inline-block;
+    margin-left: 14px;
 }
 
 .offers__item {
@@ -344,8 +344,6 @@
 .pager {
     text-align: center;
     height: 53px;
-    left: 769px;
-    top: 1990px;
     display: flex;
     align-items: center;
     justify-content: center;
