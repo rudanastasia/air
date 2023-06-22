@@ -8,7 +8,6 @@
 
 .hero {
     position: relative;
-    width: 1920px;
     height: 1202px;
     left: 0px;
     top: 0px;
@@ -81,7 +80,6 @@
 
 .tours {
     /*position: absolute;*/
-    width: 1140px;
     height: 549px;
     left: 389px;
     top: 775px;
@@ -339,7 +337,6 @@
 .about {
     vertical-align: top;
     /*position: absolute;*/
-    width: 1139px;
     height: 552px;
     left: 389px;
     top: 2175px;
