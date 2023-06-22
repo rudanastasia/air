@@ -2,7 +2,7 @@
     background: url(http://rudanastasia.github.io/air/img/hero.png), url(http://rudanastasia.github.io/air/img/about.png);
     min-height: 2768px;
     background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom center;
+    background-position: top center, bottom 150px center;
     background-color: #001821;
 }
 
