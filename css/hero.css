@@ -76,11 +76,7 @@
 }
 
 .tours {
-    /*position: absolute;*/
-    height: 549px;
-    left: 389px;
-    top: 775px;
-    padding-bottom: 676px;
+    padding-bottom: 129px;
 }
 
 .tour__title {
@@ -186,7 +182,7 @@
 }
 
 .offers__description {
-    padding: 23px 19px;
+    padding: 26px 19px;
     color: #303030;
     font-size: 14px;
     line-height: 21px;
@@ -197,8 +193,8 @@
 .tours__buttn {
     background: #F5170E;
     border-radius: 35px;
-    width: 130px;
-    height: 55px;
+    width: 135px;
+    height: 52px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -208,12 +204,8 @@
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 18px 40px;
-    margin-bottom: 20px;
-    margin-left: 23px;
-    /*position: absolute;*/
-    top: 470px;
-    padding: 25px 28px;
+    padding: 23px 28px;
+    margin: -2px 23px;
 }
 
 .tours__buttn.tours__buttn--active:hover {
@@ -239,11 +231,7 @@
 
 .news__list {
     display: flex;
-    /*position: absolute;*/
     width: 1220px;
-    height: 600px;
-    left: 389px;
-    top: 1534px;
 }
 
 .news__item {
