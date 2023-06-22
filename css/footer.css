@@ -1,6 +1,5 @@
 .footer-container__content {
     border-top: 1px solid #233a42;
-    width: 1142px;
 }
 
 .footer {
@@ -31,7 +30,6 @@
 }
 
 .socials {
-    top: -59px;
     right: 300px;
     margin-left: 964px;
     margin-top: 7px;
@@ -43,8 +41,6 @@
     vertical-align: middle;
     margin-right: 7px;
     height: 50px;
-    left: 1092px;
-    top: 2833px;
 }
 
 .socials__item:last-child {
@@ -54,7 +50,6 @@
 .socials__link {
     display: block;
     text-decoration: none;
-    width: 36px;
     height: 36px;
     background: center center no-repeat;
     position: relative;
@@ -94,11 +89,7 @@
 
 .contacts__footer {
     position: relative;
-    width: 191px;
     height: 35px;
-    left: 948px;
-    top: -2px;
-    right: 389px;
     text-decoration: none;
     font-family: 'Open Sans';
     font-style: normal;
