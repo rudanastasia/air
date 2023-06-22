@@ -255,6 +255,8 @@
     overflow: hidden;
     border-radius: 4px;
     margin-top: 10px;
+    margin-bottom: 39px;
+    height: 400px;
 }
 
 .news__cover {
@@ -272,6 +274,7 @@
     bottom: 214px;
     padding: 25px 30px;
     min-height: 140px;
+    margin-top: -164px;
 }
 
 .news__title {
@@ -342,7 +345,7 @@
 
 .pager {
     text-align: center;
-    height: 53px;
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,11 +375,6 @@
 
 .pager__display {
     margin-right: 26px;
-    /*position: absolute;*/
-    width: 125px;
-    height: 20px;
-    left: 1px;
-    top: 7px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -384,12 +382,13 @@
     line-height: 20px;
     display: flex;
     align-items: center;
+    margin-left: 38px;
+    margin-right: 26px;
 }
 
 .pager__list {
-    left: 149px;
     width: 250px;
-    /*position: absolute;*/
+    margin-right: 19px;
 }
 
 .pager__item {
