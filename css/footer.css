@@ -1,12 +1,12 @@
 .footer-container__content {
     border-top: 1px solid #233a42;
+    margin-top: 50px;
 }
 
 .footer {
-    position: relative;
-    margin-top: 88px;
     display: flex;
     align-items: center;
+    padding: 35px 0;
 }
 
 .footer__container {
@@ -25,10 +25,13 @@
     font-weight: 400;
     font-size: 11px;
     color: #9A9A9A;
+    margin-left: 28px;
+    margin-bottom: 5px;
+    padding-top: 7px;
 }
 
 .socials {
-    margin-left: 245px;
+    margin-left: 225px;
     margin-top: 7px;
 }
 
