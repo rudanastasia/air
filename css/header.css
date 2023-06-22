@@ -34,6 +34,10 @@
     color: #F5170E
 }
 
+.contacts {
+    margin-left: auto;
+}
+
 .contacts__phone {
     position: relative;
     width: 191px;
