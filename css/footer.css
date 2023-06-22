@@ -3,9 +3,8 @@
 }
 
 .footer {
-    height: 152px;
     position: relative;
-    margin-top: 45px;
+    margin-top: 88px;
     display: flex;
     align-items: center;
 }
@@ -36,8 +35,7 @@
 .socials__item{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 7px;
-    height: 50px;
+    margin-right: 5px;
 }
 
 .socials__item:last-child {
