@@ -26,8 +26,10 @@
 .menu__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 50px;
+    margin-right: 49px;
+    margin-top: 7px;
 }
+
 .menu__link {
     font-size: 14px;
     line-height: 19px;
@@ -56,6 +58,7 @@
     line-height: 35px;
     display: flex;
     align-items: center;
+    margin-top: 56px;
 }
 
 .contacts__phone:hover {
@@ -75,4 +78,6 @@
     align-items: center;
     text-decoration-line: underline;
     text-decoration: none;
+    margin-bottom: 46px;
+    margin-left: 92px;
 }
