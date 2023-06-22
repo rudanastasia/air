@@ -13,12 +13,9 @@
 }
 
 .hero__title {
-    /*position: absolute;*/
     width: 511px;
     height: 197px;
-    left: 390px;
-    top: 196px;
-
+    padding-bottom: 61px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -26,14 +23,13 @@
     line-height: 98px;
     display: flex;
     align-items: flex-end;
+    margin-top: 88px;
+    margin-bottom: 0;
 }
 
 .hero__subtitle {
-    /*position: absolute;*/
     width: 196px;
     height: 20px;
-    left: 391px;
-    top: 434px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -41,6 +37,8 @@
     line-height: 20px;
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
+    margin-top: 29px;
 }
 
 .btn {
@@ -61,6 +59,7 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 18px 40px
+    margin-bottom: 247px;
 }
 
 .btn.btn--active:hover {
@@ -82,11 +81,11 @@
     height: 549px;
     left: 389px;
     top: 775px;
-    padding-bottom: 720px;
+    padding-bottom: 676px;
 }
 
 .tour__title {
-    margin-bottom: 45px;
+    margin-bottom: 41px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -236,7 +235,7 @@
     /*position: absolute;*/
     left: 1px;
     top: 7px;
-    margin-bottom: 55px;
+    margin-bottom: 22px;
 }
 
 .news__list {
@@ -289,6 +288,7 @@
     line-height: 49px;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 37px;
 }
 
 .news__img {
