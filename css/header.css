@@ -2,6 +2,8 @@
     position: relative;
     width: 1141px;
     height: 123.36px;
+    left: 269px;
+    top: 26.64px;
     margin-bottom: 150px;
 }
 
@@ -9,16 +11,12 @@
     position: relative;
     width: 85px;
     height: 36px;
-    left: 0;
-    top: 1px;
 }
 
 .menu {
     position: relative;
     width: 313px;
     height: 19px;
-    left: 165px;
-    top: -24px;
 }
 
 .menu__item {
@@ -42,8 +40,6 @@
     position: relative;
     width: 191px;
     height: 35px;
-    left: 951px;
-    top: -56px;
     right: 952px;
     text-decoration: none;
     font-family: 'Open Sans';
@@ -63,8 +59,6 @@
     position: relative;
     width: 97px;
     height: 18px;
-    left: 1043px;
-    top: -62px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
