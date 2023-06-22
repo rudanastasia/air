@@ -7,7 +7,7 @@
 }
 
 .hero {
-    position: absolute;
+    position: relative;
     width: 1920px;
     height: 1202px;
     left: 0px;
@@ -15,7 +15,7 @@
 }
 
 .hero__title {
-    position: absolute;
+    /*position: absolute;*/
     width: 511px;
     height: 197px;
     left: 390px;
@@ -31,11 +31,11 @@
 }
 
 .hero__subtitle {
-    position: absolute;
+    /*position: absolute;*/
     width: 196px;
     height: 20px;
     left: 391px;
-    top: 455px;
+    top: 434px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -48,7 +48,7 @@
 .btn {
     background: #F5170E;
     border-radius: 35px;
-    position: absolute;
+    /*position: absolute;*/
     width: 166px;
     height: 56px;
     left: 392px;
@@ -80,7 +80,7 @@
 }
 
 .tours {
-    position: absolute;
+    /*position: absolute;*/
     width: 1140px;
     height: 549px;
     left: 389px;
@@ -98,7 +98,7 @@
 }
 
 .flame {
-    position: absolute;
+    /*position: absolute;*/
     width: 21px;
     height: 28px;
     left: 285px;
@@ -216,7 +216,7 @@
     padding: 18px 40px;
     margin-bottom: 20px;
     margin-left: 23px;
-    position: absolute;
+    /*position: absolute;*/
     top: 470px;
     padding: 25px 28px;
 }
@@ -236,7 +236,7 @@
 }
 
 .news {
-    position: absolute;
+    /*position: absolute;*/
     left: 1px;
     top: 7px;
     margin-bottom: 55px;
@@ -244,7 +244,7 @@
 
 .news__list {
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     width: 1220px;
     height: 600px;
     left: 389px;
@@ -271,7 +271,7 @@
 
 .news__content {
     padding-left: 25px;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     right: 0;
     bottom: 214px;
@@ -284,7 +284,7 @@
     height: 49px;
     left: 388px;
     top: 1444px;
-    position: absolute;
+    /*position: absolute;*/
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -305,7 +305,7 @@
 .news__date {
     font-size: 14px;
     top: 18px;
-    position: absolute;
+    /*position: absolute;*/
     left: 28px;
     text-transform: lowercase;
 }
@@ -318,7 +318,7 @@
     line-height: 36px;
     margin-bottom: 15px;
     margin-top: 12px;
-    position: absolute;
+    /*position: absolute;*/
     top: 38px;
 }
 
@@ -332,14 +332,14 @@
     line-height: 21px;
     display: flex;
     align-items: flex-start;
-    position: absolute;
+    /*position: absolute;*/
     top: 91px;
 }
 
 .about {
     display: inline-block;
     vertical-align: top;
-    position: absolute;
+    /*position: absolute;*/
     width: 1139px;
     height: 552px;
     left: 389px;
@@ -348,7 +348,7 @@
 
 .pager {
     text-align: center;
-    position: absolute;
+    /*position: absolute;*/
     width: 375px;
     height: 53px;
     left: 769px;
@@ -379,7 +379,7 @@
 
 .pager__display {
     margin-right: 26px;
-    position: absolute;
+    /*position: absolute;*/
     width: 125px;
     height: 20px;
     left: 1px;
@@ -396,7 +396,7 @@
 .pager__list {
     left: 149px;
     width: 250px;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .pager__item {
@@ -455,7 +455,7 @@
     line-height: 49px;
     display: flex;
     align-items: flex-end;
-    position: absolute;
+    /*position: absolute;*/
     top: 163px;
     left: 437px;
     color: black;
