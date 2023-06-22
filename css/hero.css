@@ -234,7 +234,7 @@
     /*position: absolute;*/
     left: 1px;
     top: 7px;
-    margin-bottom: 22px;
+    margin-bottom: 136px;
 }
 
 .news__list {
@@ -429,7 +429,7 @@
     background: url(http://rudanastasia.github.io/air/img/mountains.png) center center / cover no-repeat;
     width: 781px;
     height: 453px;
-    padding: 155px 84px;
+    padding: 73px 77px;
     display: inline-block;
     margin-left: -136px;
     margin-top: 95px;
@@ -438,8 +438,6 @@
 .about__title {
     width: 103px;
     height: 49px;
-    left: 824px;
-    top: 2342px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -447,17 +445,15 @@
     line-height: 49px;
     display: flex;
     align-items: flex-end;
-    /*position: absolute;*/
     top: 163px;
     left: 437px;
     color: black;
+    margin-bottom: 36px;
 }
 
 .about__description-text {
     width: 502px;
     height: 135px;
-    left: 824px;
-    top: 2428px;
     margin-bottom: 42px;
     font-family: 'Open Sans';
     font-style: normal;
