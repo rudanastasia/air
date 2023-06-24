@@ -143,18 +143,18 @@
 
 .partners {
     background: #F4F5F5;
-    padding: 110px 0 29px;
+    padding: 97px 0 41px;
     color: black;
-    height: 537px;
+    margin-top: -11px;
 }
 
 .partners__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 25px;
+    line-height: 43px;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 115px;
+    margin-bottom: 114px;
 }
 
 .partners__list {
@@ -224,8 +224,8 @@
 }
 
 .inner-footer__container {
-    padding: 39px 0;
-    height: 132px;
+    /*padding: 39px 0;
+    height: 132px;*/
 }
 
 .inner__footer {
