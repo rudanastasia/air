@@ -72,7 +72,7 @@
 
 .service {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .servisec__img {
@@ -143,9 +143,8 @@
 
 .partners {
     background: #F4F5F5;
-    padding: 97px 0 26px;
+    padding: 102px 0 24px;
     color: black;
-    margin-top: -11px;
 }
 
 .partners__title {
