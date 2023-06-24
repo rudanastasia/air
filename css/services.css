@@ -9,16 +9,16 @@
 }
 
 .top-line {
-    min-height: 412px;
+    min-height: 425px;
     display: flex;
     flex-direction: column;
-    background: #001821 url(http://rudanastasia.github.io/air/img/headline-services.png) left top no-repeat;
-    background-size: cover;
+    background: #001821 url(http://rudanastasia.github.io/air/img/headline-services.png) center top no-repeat;
+    background-size: 1920px 425px;
 }
 
 .page__title {
     font-size: 72px;
-    line-height: 252px;
+    line-height: 144px;
     font-weight: 700;
     width: 259px;
     height: 98px;
@@ -29,8 +29,7 @@
 .breadcrumbs__list {
     display: flex;
     align-items: center;
-    width: 119px;
-    height: 19px;
+    margin-bottom: 23px;
 }
 
 .breadcrumbs__item {
@@ -66,19 +65,22 @@
 .page-content {
     background: white;
     color: #303030;
-    padding: 90px 0;
+    padding: 90px 0 0;
+}
+
+.services {
+    margin-bottom: 103px;
 }
 
 .service {
     display: flex;
-    height: 405px;
+    margin-bottom: 20px;
 }
 
 .servisec__img {
-    width: 28%;
-    margin-right: 3%;
+    margin-right: 30px;
     border-radius: 5px;
-    margin-bottom: 40px;
+    padding-bottom: 28px;
 }
 
 .service__content {
@@ -89,20 +91,19 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
-    margin-bottom: 35px;
-    padding-top: 13px;
-    padding-left: 10px;
+    margin-bottom: 31px;
+    padding-top: 15px;
+    padding-left: 27px;
 }
 
 .service__description {
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
-    margin-bottom: 29px;
+    margin-bottom: 16px;
+    margin-left: 21px;
     display: flex;
     align-items: center;
-    width: 652px;
-    height: 136px;
 }
 
 .service--act {
@@ -123,8 +124,9 @@
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 18px 48px;
+    padding: 0px 38px;
     color: white;
+    margin: 14px 22px;
 }
 
 .btn__service.btn__service--active:hover {
@@ -143,7 +145,7 @@
 
 .partners {
     background: #F4F5F5;
-    padding: 95px 0;
+    padding: 111px 0 29px;
     color: black;
     height: 537px;
 }
@@ -151,10 +153,10 @@
 .partners__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 65px;
+    line-height: 25px;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 75px;
+    margin-bottom: 115px;
 }
 
 .partners__list {
@@ -224,8 +226,8 @@
 }
 
 .inner-footer__container {
-    padding: 39px 0;
-    height: 132px;
+    /*padding: 39px 0;
+    height: 132px;*/
 }
 
 .inner__footer {
