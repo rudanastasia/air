@@ -311,9 +311,8 @@
 
 .pager--service {
     color: black;
-    margin-top: 31px;
-    padding-left: 23px;
-    margin-bottom: 62px;
+    padding-left: 27px;
+    margin-bottom: 61px;
 }
 
 .pager--service .pager__item--active .pager__link {
