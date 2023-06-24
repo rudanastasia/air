@@ -2,19 +2,24 @@
     background: url(http://rudanastasia.github.io/air/img/hero.png), url(http://rudanastasia.github.io/air/img/about.png);
     min-height: 2768px;
     background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom 150px center;
+    background-position: top left, bottom left;
     background-color: #001821;
 }
 
 .hero {
     position: relative;
+    height: 1202px;
     left: 0px;
     top: 0px;
 }
 
 .hero__title {
+    /*position: absolute;*/
     width: 511px;
     height: 197px;
+    left: 390px;
+    top: 196px;
+
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -22,13 +27,14 @@
     line-height: 98px;
     display: flex;
     align-items: flex-end;
-    margin-top: 88px;
-    margin-bottom: 0;
 }
 
 .hero__subtitle {
+    /*position: absolute;*/
     width: 196px;
     height: 20px;
+    left: 391px;
+    top: 434px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -36,8 +42,6 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 32px;
-    margin-top: 29px;
 }
 
 .btn {
@@ -57,8 +61,7 @@
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 18px 40px;
-    margin-bottom: 247px;
+    padding: 18px 40px
 }
 
 .btn.btn--active:hover {
@@ -76,24 +79,28 @@
 }
 
 .tours {
-    padding-bottom: 129px;
+    /*position: absolute;*/
+    height: 549px;
+    left: 389px;
+    top: 775px;
+    padding-bottom: 720px;
 }
 
 .tour__title {
-    margin-bottom: 41px;
+    margin-bottom: 45px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
-    display: inline-block;
 }
 
 .flame {
+    /*position: absolute;*/
     width: 21px;
     height: 28px;
-    display: inline-block;
-    margin-left: 14px;
+    left: 285px;
+    top: 14px;
 }
 
 .offers__item {
@@ -182,7 +189,7 @@
 }
 
 .offers__description {
-    padding: 26px 19px;
+    padding: 23px 19px;
     color: #303030;
     font-size: 14px;
     line-height: 21px;
@@ -193,8 +200,8 @@
 .tours__buttn {
     background: #F5170E;
     border-radius: 35px;
-    width: 135px;
-    height: 52px;
+    width: 130px;
+    height: 55px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -204,8 +211,12 @@
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 23px 28px;
-    margin: -2px 23px;
+    padding: 18px 40px;
+    margin-bottom: 20px;
+    margin-left: 23px;
+    /*position: absolute;*/
+    top: 470px;
+    padding: 25px 28px;
 }
 
 .tours__buttn.tours__buttn--active:hover {
@@ -226,12 +237,16 @@
     /*position: absolute;*/
     left: 1px;
     top: 7px;
-    margin-bottom: 136px;
+    margin-bottom: 55px;
 }
 
 .news__list {
     display: flex;
+    /*position: absolute;*/
     width: 1220px;
+    height: 600px;
+    left: 389px;
+    top: 1534px;
 }
 
 .news__item {
@@ -243,8 +258,6 @@
     overflow: hidden;
     border-radius: 4px;
     margin-top: 10px;
-    margin-bottom: 39px;
-    height: 400px;
 }
 
 .news__cover {
@@ -262,7 +275,6 @@
     bottom: 214px;
     padding: 25px 30px;
     min-height: 140px;
-    margin-top: -164px;
 }
 
 .news__title {
@@ -278,7 +290,6 @@
     line-height: 49px;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 37px;
 }
 
 .news__img {
@@ -303,7 +314,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 1px;
+    margin-bottom: 15px;
     margin-top: 12px;
     /*position: absolute;*/
     top: 38px;
@@ -333,18 +344,15 @@
 
 .pager {
     text-align: center;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*position: absolute;*/
+    width: 375px;
+    height: 53px;
+    left: 769px;
+    top: 1990px;
 }
 
 .pager--service {
     color: black;
-    width: 375px;
-    height: 53px;
-    left: 786px;
-    top: 1288px;
 }
 
 .pager--service .pager__item--active .pager__link {
@@ -363,6 +371,11 @@
 
 .pager__display {
     margin-right: 26px;
+    /*position: absolute;*/
+    width: 125px;
+    height: 20px;
+    left: 1px;
+    top: 7px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -370,14 +383,12 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    margin-left: 38px;
-    margin-right: 26px;
-    padding-bottom: 7px;
 }
 
 .pager__list {
+    left: 149px;
     width: 250px;
-    margin-right: 19px;
+    /*position: absolute;*/
 }
 
 .pager__item {
@@ -418,7 +429,7 @@
     background: url(http://rudanastasia.github.io/air/img/mountains.png) center center / cover no-repeat;
     width: 781px;
     height: 453px;
-    padding: 73px 77px;
+    padding: 155px 84px;
     display: inline-block;
     margin-left: -136px;
     margin-top: 95px;
@@ -427,6 +438,8 @@
 .about__title {
     width: 103px;
     height: 49px;
+    left: 824px;
+    top: 2342px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -434,15 +447,17 @@
     line-height: 49px;
     display: flex;
     align-items: flex-end;
+    /*position: absolute;*/
     top: 163px;
     left: 437px;
     color: black;
-    margin-bottom: 36px;
 }
 
 .about__description-text {
     width: 502px;
     height: 135px;
+    left: 824px;
+    top: 2428px;
     margin-bottom: 42px;
     font-family: 'Open Sans';
     font-style: normal;
