@@ -10,10 +10,7 @@
 
 .top-line {
     min-height: 412px;
-    width: 1920px;
-    /*position: absolute;*/
-    left: 0px;
-    top: 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: #001821 url(http://rudanastasia.github.io/air/img/headline-services.png) left top no-repeat;
@@ -23,21 +20,15 @@
     font-size: 72px;
     line-height: 98px;
     font-weight: 700;
-    position: absolute;
     width: 259px;
     height: 98px;
-    left: 390px;
-    top: 118px;
 }
 
 .breadcrumbs__list {
     display: flex;
     align-items: center;
-    position: absolute;
     width: 119px;
     height: 19px;
-    left: 386px;
-    top: 369.5px;
 }
 
 .breadcrumbs__item {
@@ -81,8 +72,6 @@
     position: relative;
     width: 100%;
     height: 405px;
-    right: 681px;
-    top: 6px;
 }
 
 .servisec__img {
@@ -125,8 +114,6 @@
     border-radius: 35px;
     width: 166px;
     height: 56px;
-    left: 392px;
-    top: 472px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -168,17 +155,11 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 75px;
-    position: absolute;
-    top: 1494px;
-    left: 388px;
 }
 
 .partners__list {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 1655px;
-    left: 386px;
     width: 1261px;
     height: 256px;
 }
