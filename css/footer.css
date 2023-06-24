@@ -1,22 +1,21 @@
 .footer-container__content {
     border-top: 1px solid #233a42;
-    margin-top: 50px;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    padding: 35px 0;
+    height: 152px;
+    position: relative;
+    margin-top: 45px;
 }
 
 .footer__container {
     position: relative;
+    height: 92.64px;
 }
 
 .footer-container__section {
-    height: 140px;
-    margin-top: 12px;
-
+    /*height: 140px;
+    margin-top: 12px;*/
 }
 
 .dropdown__footer {
@@ -24,21 +23,23 @@
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
+    margin-left: 977px;
+    margin-top: -113px;
     color: #9A9A9A;
-    margin-left: 28px;
-    margin-bottom: 5px;
-    padding-top: 7px;
 }
 
 .socials {
-    margin-left: 225px;
+    right: 300px;
+    margin-left: 964px;
     margin-top: 7px;
+    position: relative;
 }
 
 .socials__item{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 7px;
+    height: 50px;
 }
 
 .socials__item:last-child {
@@ -51,7 +52,6 @@
     height: 36px;
     background: center center no-repeat;
     position: relative;
-    width: 36px;
 }
  
 .socials__item--icon--telegram .socials__link {
@@ -89,6 +89,7 @@
 .contacts__footer {
     position: relative;
     height: 35px;
+    right: 389px;
     text-decoration: none;
     font-family: 'Open Sans';
     font-style: normal;
