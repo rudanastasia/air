@@ -6,11 +6,12 @@
     height: 152px;
     position: relative;
     margin-top: 45px;
+    display: flex;
+    align-items: center;
 }
 
 .footer__container {
     position: relative;
-    height: 92.64px;
 }
 
 .footer-container__section {
@@ -23,8 +24,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
-    margin-left: 977px;
-    margin-top: -113px;
     color: #9A9A9A;
 }
 
@@ -52,6 +51,7 @@
     height: 36px;
     background: center center no-repeat;
     position: relative;
+    width: 36px;
 }
  
 .socials__item--icon--telegram .socials__link {
