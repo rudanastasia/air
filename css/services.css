@@ -5,11 +5,10 @@
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .top-line {
-    min-height: 425px;
+    min-height: 426px;
     display: flex;
     flex-direction: column;
     background: #001821 url(http://rudanastasia.github.io/air/img/headline-services.png) center top no-repeat;
@@ -58,13 +57,13 @@
     line-height: 19px;
     display: flex;
     align-items: center;
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
 .page-content {
     background: white;
     color: #303030;
-    padding: 90px 0 0;
+    padding: 98px 0 8px;
 }
 
 .services {
@@ -144,7 +143,7 @@
 
 .partners {
     background: #F4F5F5;
-    padding: 111px 0 29px;
+    padding: 110px 0 29px;
     color: black;
     height: 537px;
 }
