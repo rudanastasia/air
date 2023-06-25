@@ -208,3 +208,67 @@
 .form__btn:last-child {
     margin-right: 0;
 }
+
+.btn__reset {
+    background: #2B2B2B;
+    border-radius: 35px;
+    width: 166px;
+    height: 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 40px;
+    margin-bottom: 247px;
+}
+
+.btn__reset.btn__reset--active:hover {
+    background-color: white;
+    border-color: rebeccapurple;
+    color: #F5170E;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+} 
+
+.btn__submit {
+    background: #F5170E;
+    border-radius: 35px;
+    width: 166px;
+    height: 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 40px;
+    margin-bottom: 247px;
+}
+
+.btn__submit.btn__submit--active:hover {
+    background-color: white;
+    border-color: rebeccapurple;
+    color: #F5170E;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
