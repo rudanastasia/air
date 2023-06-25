@@ -136,11 +136,8 @@
     background: #fff;
     padding: 22px 30px;
     font-size: 18px;
-}
-
-.form__input.form__input--active:hover {
-    border-color: #F5170E;
-}    
+    outline-color: #F5170E
+}   
 
 .form__input::placeholder {
     color: #666666;
@@ -152,10 +149,6 @@
 
 .form__input--textarea {
     height: 232px;
-}
-
-.form__input--textarea..form__input--textarea--active {
-    border-color: #F5170E;
 }
 
 .form__input--textarea::placeholder {
