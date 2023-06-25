@@ -112,6 +112,14 @@
     line-height: 1.1;
 }
 
+.inner-section__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+    font-weight: bold;
+    color: black;
+}    
+
 .inner-section--bg--grey {
     background: #F4F5F5;
 }
@@ -150,12 +158,15 @@
 .form__controls-title {
     width: 40%;
     padding-left: 30px;
+    color: black;
+    font-size: 14px;
 }
 
 .controls {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    margin-left: 476px;
 }
 
 .controls__item {
