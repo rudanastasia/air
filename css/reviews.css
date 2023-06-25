@@ -138,6 +138,10 @@
     font-size: 18px;
 }
 
+.form__input:focus {
+    border-color: #F5170E;
+}    
+
 .form__input::placeholder {
     color: #666666;
 }
