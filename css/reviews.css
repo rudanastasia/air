@@ -6,7 +6,6 @@
 
 .reviews__item {
     margin-bottom: 20px;
-
 }
 
 .review {
@@ -72,14 +71,14 @@
 }
 
 .separator {
-    /*background: url(http://rudanastasia.github.io/air/img/rectangle.png), url(http://rudanastasia.github.io/air/img/couple.png);
+    background: url(http://rudanastasia.github.io/air/img/couple.png);
     min-height: 363px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, bottom left;
-    justify-content: center;*/
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    justify-content: center;
 }
 
 .separator__content {
@@ -95,14 +94,14 @@
     width: 1920px;
 }
 
-.separator::after {
+/*.separator::after {
     background: url(http://rudanastasia.github.io/air/img/couple.png);
     content: "";
     height: 341px;
     width: 487px;
     display: inline-block;
     vertical-align: top;
-}
+}*/
 
 .separator__title {
     font-size: 48px;
