@@ -6,6 +6,7 @@
 
 .reviews__item {
     margin-bottom: 20px;
+
 }
 
 .review {
@@ -71,27 +72,28 @@
 }
 
 .separator {
-    background: url(http://rudanastasia.github.io/air/img/couple.png);
+    background: url(http://rudanastasia.github.io/air/img/rectangle.png);
     min-height: 363px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: bottom left;
     justify-content: center;
+    width: 100%;
 }
 
 .separator__content {
     max-width: 50%;
 }
 
-.separator::before {
+.separator::after {
     content: "";
     display: inline-block;
     vertical-align: top;
-    background: url(http://rudanastasia.github.io/air/img/rectangle.png) center center / cover no-repeat;
+    background: url(http://rudanastasia.github.io/air/img/couple.png);
     height: 363px;
     width: 1920px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 /*.separator::after {
