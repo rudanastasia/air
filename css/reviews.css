@@ -197,8 +197,12 @@
     cursor: pointer;
 }
 
-.controls__checkbox:checked ~ .controls__teg {
+/*.controls__checkbox:checked ~ .controls__teg {
     background: #B9EAE4;
+}*/
+
+input[type=checkbox]:checked + label {
+  color: #B9EAE4;
 }
 
 .controls__checkbox {
