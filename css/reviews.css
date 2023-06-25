@@ -72,13 +72,14 @@
 }
 
 .separator {
-    background: url(http://rudanastasia.github.io/air/img/rectangle.png);
+    background: url(http://rudanastasia.github.io/air/img/rectangle.png) no-repeat;
     min-height: 363px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-size: cover;
 }
 
 .separator__content {
@@ -93,7 +94,7 @@
     height: 363px;
     width: 1920px;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom left 70%;
 }
 
 /*.separator::after {
