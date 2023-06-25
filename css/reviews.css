@@ -59,6 +59,7 @@
     margin-left: 20px;
     height: 20px;
     margin-top: 11px;
+    display: inline-block;
 }
 
 .review__title {
@@ -132,7 +133,7 @@
 .inner-section--bg--grey {
     background: #F4F5F5;
     padding: 71px 0;
-    height: 657px;
+    height: 799px;
 }
 .form__row {
     display: flex;
@@ -159,8 +160,8 @@
 }
 
 .form__input--textarea {
-    height: 192px;
-    margin-bottom: 34px;
+    height: 233px;
+    margin-bottom: 36px;
 }
 
 .form__input--textarea::placeholder {
@@ -182,7 +183,7 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    padding: 0px 0 0 416px;
+    padding: 0px 0 0 413px;
     margin-top: -47px;
     margin-bottom: 29px;
 }
