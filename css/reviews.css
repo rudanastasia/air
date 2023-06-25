@@ -199,7 +199,6 @@
 
 .controls__checkbox:checked ~ .controls__tag {
     background: #B9EAE4;
-
 }
 
 .controls__checkbox {
@@ -294,4 +293,15 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
+}
+.teg {
+    font-size: 13px;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 35px;
+    background: #E7E7E7;
+    margin-left: 20px;
+    height: 35px;
+    margin-top: 11px;
+    display: inline-block;
 }
