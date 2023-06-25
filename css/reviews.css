@@ -19,7 +19,7 @@
 .review__header {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 }
 
 .review__user {
@@ -28,12 +28,14 @@
     font-size: 24px;
     font-weight: bold;
     color: #4d76a1;
-    margin-bottom: 11px;
+    margin-left: 19px;
+    margin-top: 7px;
 }
 
 .review__user:after {
     content: url(http://rudanastasia.github.io/air/img/vkblue.png);
     height: 29px;
+    margin-left: 9px;
 }
 
 .avatar {
@@ -52,8 +54,11 @@
     font-size: 13px;
     color: #333;
     padding: 8px 16px;
-    border-radius: 50px;
+    border-radius: 35px;
     background: #B9EAE4;
+    margin-left: 20px;
+    height: 20px;
+    margin-top: 11px;
 }
 
 .review__title {
@@ -63,7 +68,9 @@
 }
 
 .review__content-text {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    line-height: 27px;
+    font-size: 16px;
 }
 
 .review__date {
@@ -73,7 +80,7 @@
 
 .separator {
     background: url(http://rudanastasia.github.io/air/img/rectangle.png) no-repeat;
-    min-height: 363px;
+    height: 369px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,23 +116,27 @@
 .separator__title {
     font-size: 48px;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 65.37px;
+    width: 594px;
+    height: 130px;
 }
 
 .inner-section__title {
     font-size: 48px;
     font-weight: bold;
     line-height: 1.1;
-    font-weight: bold;
     color: black;
+    margin-bottom: 61px;
 }    
 
 .inner-section--bg--grey {
     background: #F4F5F5;
+    padding: 71px 0;
+    height: 657px;
 }
 .form__row {
     display: flex;
-    margin-bottom: 30px;
+    margin-top: 27px;
 }
 
 .form__input {
@@ -148,7 +159,8 @@
 }
 
 .form__input--textarea {
-    height: 232px;
+    height: 192px;
+    margin-bottom: 34px;
 }
 
 .form__input--textarea::placeholder {
@@ -161,17 +173,18 @@
 }
 
 .form__controls-title {
-    width: 40%;
-    padding-left: 30px;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 24.51px;
 }
 
 .controls {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    margin-left: 476px;
+    padding: 0px 0 0 416px;
+    margin-top: -47px;
+    margin-bottom: 29px;
 }
 
 .controls__item {
@@ -231,6 +244,7 @@
     text-decoration: none;
     padding: 18px 40px;
     margin-bottom: 247px;
+    margin-right: 20px;
 }
 
 .btn__reset.btn__reset--active:hover {
