@@ -72,18 +72,36 @@
 }
 
 .separator {
-    background: url(http://rudanastasia.github.io/air/img/rectangle.png), url(http://rudanastasia.github.io/air/img/couple.png);
+    /*background: url(http://rudanastasia.github.io/air/img/rectangle.png), url(http://rudanastasia.github.io/air/img/couple.png);
     min-height: 363px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom, bottom left;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 .separator__content {
     max-width: 50%;
+}
+
+.separator::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    background: url(http://rudanastasia.github.io/air/img/rectangle.png) center center / cover no-repeat;
+    height: 363px;
+    width: 1920px;
+}
+
+.separator::after {
+    background: url(http://rudanastasia.github.io/air/img/couple.png);
+    content: "";
+    height: 341px;
+    width: 487px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .separator__title {
@@ -92,6 +110,9 @@
     line-height: 1.1;
 }
 
+.inner-section--bg--grey {
+    background: #F4F5F5;
+}
 .form__row {
     display: flex;
     margin-bottom: 30px;
