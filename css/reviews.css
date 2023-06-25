@@ -154,6 +154,10 @@
     height: 232px;
 }
 
+.form__input--textarea::placeholder {
+    color: #666666;
+}
+
 .form__controls {
     display: flex;
     margin-bottom: 35px;
