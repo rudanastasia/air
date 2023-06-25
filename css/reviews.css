@@ -197,7 +197,7 @@
     cursor: pointer;
 }
 
-.controls__checkbox:checked ~ .controls__tag {
+.controls__checkbox:checked ~ .controls__teg {
     background: #B9EAE4;
 }
 
