@@ -138,7 +138,7 @@
     font-size: 18px;
 }
 
-.form__input:focus {
+.form__input:hover {
     border-color: #F5170E;
 }    
 
