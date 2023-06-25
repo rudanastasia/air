@@ -43,3 +43,9 @@ img {
     margin: 0 auto;
     width: 1140px;
 }
+
+.button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
