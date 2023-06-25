@@ -215,6 +215,7 @@
 
 .btn__reset {
     background: #2B2B2B;
+    color: white;
     border-radius: 35px;
     width: 166px;
     height: 56px;
@@ -248,6 +249,8 @@
 .btn__submit {
     background: #F5170E;
     border-radius: 35px;
+    border-color: #F5170E;
+    color: white;
     width: 166px;
     height: 56px;
     font-family: 'Open Sans';
