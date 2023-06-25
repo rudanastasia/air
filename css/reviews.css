@@ -138,7 +138,7 @@
     font-size: 18px;
 }
 
-.form__input:hover {
+.form__input.form__input--active:hover {
     border-color: #F5170E;
 }    
 
@@ -152,6 +152,10 @@
 
 .form__input--textarea {
     height: 232px;
+}
+
+.form__input--textarea..form__input--textarea--active {
+    border-color: #F5170E;
 }
 
 .form__input--textarea::placeholder {
