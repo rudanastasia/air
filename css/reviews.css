@@ -201,8 +201,12 @@
     background: #B9EAE4;
 }*/
 
-input[type=checkbox]:checked + label {
-  color: #B9EAE4;
+.input:checked ~ .teg {
+   background: #B9EAE4;
+}
+
+.input {
+   display: none;
 }
 
 .controls__checkbox {
