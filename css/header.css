@@ -104,11 +104,14 @@
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+    color: black;
+    opacity: 80%;
+    background: url(http://rudanastasia.github.io/air/img/drop.png);
 }
 
-.dropdown__title:hover .dropdown-time {
+.dropdown__title:hover {
     display: block;
+    transition: 1s;
 }
