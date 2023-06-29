@@ -191,6 +191,7 @@
     white-space: nowrap;
     margin-right: 10px;
     margin-bottom: 10px;
+    color: black;
 }
 
 .form__check {
@@ -204,6 +205,8 @@
 .form__checkes {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 440px;
+    margin-top: -43px;
 }
 
 .controls {
