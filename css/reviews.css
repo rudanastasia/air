@@ -1,7 +1,6 @@
 .reviews {
     column-count: 2;
     column-gap: 30px;
-    margin-bottom: 70px;
 }
 
 .reviews__item {
@@ -19,7 +18,7 @@
 .review__header {
     display: flex;
     align-items: center;
-    margin-bottom: 42px;
+    margin-bottom: 31px;
 }
 
 .review__user {
@@ -82,7 +81,7 @@
 
 .separator {
     background: url(http://rudanastasia.github.io/air/img/rectangle.png) no-repeat;
-    height: 369px;
+    height: 353px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +94,7 @@
     padding: 33px 550px 20px 0px;
 }
 
-.separator__content::after {
+/*.separator__content::after {
     content: "";
     display: inline-block;
     vertical-align: top;
@@ -103,9 +102,9 @@
     height: 363px;
     width: 1920px;
     background-repeat: no-repeat;
-    background-position: bottom right 30%;
+    background-position: bottom right 57%;
     margin-top: -153px;
-}
+}*/
 
 /*.separator::after {
     background: url(http://rudanastasia.github.io/air/img/couple.png);
@@ -120,6 +119,8 @@
     font-size: 48px;
     font-weight: bold;
     line-height: 65.37px;
+    display: inline-block;
+    margin-top: -23px;
 }
 
 .inner-section__title {
