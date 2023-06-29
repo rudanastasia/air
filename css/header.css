@@ -108,7 +108,7 @@
     transition-delay: 0s, .3s;
 }
 
-.dropdown__title--active:hover .dropdown-time {
+.dropdown__title.dropdown__title--active:hover .dropdown-time {
     display: block;
     transition: 1s;
     position: absolute;
