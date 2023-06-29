@@ -101,6 +101,11 @@
 
 .dropdown-time {
     display: none;
+    visibility: hidden;
+    z-index: -1;
+    transition-property: opacity, visibility;
+    transition-duration: .3s, 0s;
+    transition-delay: 0s, .3s;
 }
 
 .dropdown__title:hover .dropdown-time {
@@ -119,8 +124,7 @@
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-    transition-property: opacity, visibility;
-    transition-duration: .3s, 0s;
-    transition-delay: 0s, .3s;
-    visibility: hidden;
+    cursor: pointer;
+    visibility: visible;
+    transition-delay: 0s, 0s;
 }
