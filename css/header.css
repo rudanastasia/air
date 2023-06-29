@@ -109,6 +109,11 @@
     color: black;
     opacity: 80%;
     background: url(http://rudanastasia.github.io/air/img/drop.png) no-repeat;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-style: normal;
 }
 
 .dropdown__title:hover {
