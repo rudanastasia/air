@@ -94,18 +94,6 @@
     padding: 33px 550px 20px 0px;
 }
 
-/*.separator__content::after {
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    background: url(http://rudanastasia.github.io/air/img/couple.png);
-    height: 363px;
-    width: 1920px;
-    background-repeat: no-repeat;
-    background-position: bottom right 57%;
-    margin-top: -153px;
-}*/
-
 /*.separator::after {
     background: url(http://rudanastasia.github.io/air/img/couple.png);
     content: "";
@@ -121,6 +109,18 @@
     line-height: 65.37px;
     display: inline-block;
     margin-top: -23px;
+}
+
+.separator__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    background: url(http://rudanastasia.github.io/air/img/couple.png);
+    height: 363px;
+    width: 1920px;
+    background-repeat: no-repeat;
+    background-position: bottom right 57%;
+    margin-top: -153px;
 }
 
 .inner-section__title {
