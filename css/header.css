@@ -101,6 +101,11 @@
 
 .dropdown-time {
     display: none;
+}
+
+.dropdown__title:hover .dropdown-time {
+    display: block;
+    transition: 1s;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -114,9 +119,8 @@
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-}
-
-.dropdown__title:hover {
-    display: block;
-    transition: 1s;
+    transition-property: opacity, visibility;
+    transition-duration: .3s, 0s;
+    transition-delay: 0s, .3s;
+    visibility: hidden;
 }
