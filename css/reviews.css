@@ -138,6 +138,8 @@
 .form__row {
     display: flex;
     margin-top: 27px;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .form__input {
@@ -176,7 +178,32 @@
 .form__controls-title {
     color: black;
     font-size: 18px;
-    line-height: 24.51px;
+    /*line-height: 24.51px;*/
+    margin-right: 74px;
+    white-space: nowrap;
+}
+
+.form__check-text {
+    border-radius: 35px;
+    background: #e7e7e7;
+    padding: 10px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.form__check {
+    display: none;
+}
+
+.form__check:checked + .form__check-text {
+    background: #B9EAE4;
+}
+
+.form__check {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .controls {
