@@ -82,25 +82,7 @@
     margin-left: 92px;
 }
 
-.dropdown__title {
-    position: absolute;
-    width: 97px;
-    height: 18px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
-    text-decoration: none;
-    margin-bottom: 46px;
-    margin-left: 92px;
-    z-index: -1;
-}
-
-.dropdown__title.dropdown__title--active:hover {
+/*.dropdown__title.dropdown__title--active:hover {
     display: block;
     transition: 1s;
     position: absolute;
@@ -119,4 +101,35 @@
     cursor: pointer;
     visibility: visible;
     transition-delay: 0s, 0s;
+}*/
+
+.dropdown__time {
+    display: block;
+}
+
+.dropdown__time.dropdown__time--active:hover .schedule {
+    z-index: 1;
+    display: block;
+    transition: 1s;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 14px 9px;
+    color: black;
+    opacity: 80%;
+    background: url(http://rudanastasia.github.io/air/img/drop.png) no-repeat;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-style: normal;
+    cursor: pointer;
+    visibility: visible;
+    transition-delay: 0s, 0s;
+}
+
+.schedule {
+    position: absolute;
+    z-index: -1;
+    display: none;
 }
