@@ -84,6 +84,7 @@
 
 .dropdown__title.dropdown__title--active:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .dropdown__time {
@@ -106,7 +107,6 @@
     font-weight: 700;
     font-family: 'Open Sans';
     font-style: normal;
-    cursor: pointer;
     visibility: visible;
     transition-delay: 0s, 0s;
     margin-top: -48px;
