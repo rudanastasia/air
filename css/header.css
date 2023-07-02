@@ -82,26 +82,9 @@
     margin-left: 92px;
 }
 
-/*.dropdown__title.dropdown__title--active:hover {
-    display: block;
-    transition: 1s;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    padding: 14px 9px;
-    z-index: 1;
-    color: black;
-    opacity: 80%;
-    background: url(http://rudanastasia.github.io/air/img/drop.png) no-repeat;
-    font-size: 13px;
-    line-height: 21px;
-    font-weight: 700;
-    font-family: 'Open Sans';
-    font-style: normal;
-    cursor: pointer;
-    visibility: visible;
-    transition-delay: 0s, 0s;
-}*/
+.dropdown__title.dropdown__title--active:hover {
+    text-decoration: underline;
+}
 
 .dropdown__time {
     display: block;
