@@ -1,0 +1,43 @@
+.news {
+  &__list {
+    display: flex;
+    gap: 26px;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 39px;
+    flex: 0 0 calc(50% - 13px);
+
+    @include tablets {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__content {
+    padding: 25px 30px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__img {
+    min-height: 394px;
+  }
+
+  &__date {
+    font-size: 14px;
+    text-transform: lowercase;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 1px;
+    margin-top: 12px;
+  }
+}

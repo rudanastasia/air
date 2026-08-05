@@ -1,0 +1,52 @@
+.about {
+  &__content {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 488px;
+      height: 502px;
+      background: url(http://rudanastasia.github.io/air/img/gates.png) center center / cover
+        no-repeat;
+
+      @include tablets {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    background: url(http://rudanastasia.github.io/air/img/mountains.png) center center / cover
+      no-repeat;
+    position: absolute;
+    max-width: 781px;
+    width: 100%;
+    padding: 73px 77px;
+    right: 0;
+    bottom: -50px;
+
+    @include tablets {
+      position: static;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: black;
+    margin-bottom: 36px;
+  }
+
+  &__description-text {
+    max-width: 502px;
+    width: 100%;
+    margin-bottom: 42px;
+    line-height: 27px;
+
+    p {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.footer {
+  flex-shrink: 0;
+
+  &__container {
+    border-top: 1px solid #233a42;
+    margin-top: 50px;
+
+    @include tablets {
+      margin-top: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+
+    @include tablets {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+
+    @include tablets {
+      margin-right: 0;
+    }
+  }
+
+  &__menu {
+    margin-right: auto;
+
+    @include tablets {
+      margin-right: 0;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    @include tablets {
+      margin-left: 0;
+      align-items: center;
+    }
+  }
+}
+
+.socials {
+  margin-left: auto;
+  display: flex;
+  gap: 5px;
+
+  @include tablets {
+    margin-left: 0;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+    text-decoration: none;
+
+    @each $network in telegram, vk, facebook, instagram {
+      &--#{$network} {
+        background-image: url('../img/#{$network}.png');
+
+        &:hover {
+          background-image: url('../img/#{$network}-light.png');
+        }
+      }
+    }
+  }
+}
+
+.dropdown__footer {
+  font-style: normal;
+  font-size: 11px;
+  color: #9a9a9a;
+  margin-left: auto;
+  margin-bottom: 5px;
+
+  @include tablets {
+    margin-left: 0;
+  }
+}
+
+.inner__footer {
+  margin-top: auto;
+}

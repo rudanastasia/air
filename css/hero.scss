@@ -1,0 +1,54 @@
+.hero {
+  min-height: 700px;
+
+  &__container {
+    padding: 30px 0 50px 0;
+  }
+
+  &__content {
+    margin-top: 88px;
+  }
+
+  &__title {
+    max-width: 511px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+
+    @include phones {
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin: 30px 0 50px;
+  }
+}
+
+.top-line {
+  min-height: 426px;
+  display: flex;
+  flex-direction: column;
+  background: #001821 url(http://rudanastasia.github.io/air/img/headline-services.png) center top
+    no-repeat;
+  background-size: 1920px 425px;
+
+  &__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.page__title {
+  font-size: 72px;
+  line-height: 144px;
+  font-weight: 700;
+  width: 259px;
+  height: 98px;
+  display: flex;
+  align-items: flex-end;
+}

@@ -1,0 +1,122 @@
+.reviews {
+  column-count: 2;
+  column-gap: 30px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+}
+
+.review {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background: #f4f5f5;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d76a1;
+    margin-left: 19px;
+    margin-top: 7px;
+
+    &::after {
+      content: url(http://rudanastasia.github.io/air/img/vkblue.png);
+      height: 29px;
+      margin-left: 9px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    line-height: 42px;
+  }
+
+  &__content-text {
+    margin-bottom: 48px;
+    line-height: 27px;
+    font-size: 16px;
+  }
+
+  &__date {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.tag {
+  font-size: 13px;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 35px;
+  background: #b9eae4;
+  margin-left: 20px;
+  height: 35px;
+  margin-top: 11px;
+  display: inline-block;
+}
+
+.separator {
+  background: url(http://rudanastasia.github.io/air/img/rectangle.png) no-repeat;
+  height: 353px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-size: cover;
+
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 65.37px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+      background: url(http://rudanastasia.github.io/air/img/couple.png);
+      height: 363px;
+      width: 1920px;
+      background-repeat: no-repeat;
+      background-position: bottom right 12%;
+      margin-top: -10px;
+    }
+  }
+}
+
+.inner-section__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: black;
+  margin-bottom: 61px;
+}
+
+.inner-section--bg--grey {
+  background: #f4f5f5;
+  padding: 71px 0;
+  height: 799px;
+}

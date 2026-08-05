@@ -1,0 +1,23 @@
+//normalize
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+//setups
+@import '_variables';
+@import 'media';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'layout';
+@import 'base';
+@import 'welcome';
+@import 'header';
+@import 'hero';
+@import 'btn';
+@import 'section';
+@import 'breadcrumbs';
+@import 'tours';
+@import 'news';
+@import 'pagination';
+@import 'about';
+@import 'services';
+@import 'reviews';
+@import 'form';
+@import 'footer';

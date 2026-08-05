@@ -1,0 +1,54 @@
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  position: relative;
+  background: #001821;
+  color: #ffffff;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #001821;
+  background:
+    url(http://rudanastasia.github.io/air/img/hero.png) top center no-repeat,
+    url(http://rudanastasia.github.io/air/img/about.png) bottom 150px center no-repeat;
+}
+
+.maincontent {
+  flex: 1 0 auto;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.page-content {
+  background: white;
+  color: #303030;
+  padding: 98px 0 8px;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
