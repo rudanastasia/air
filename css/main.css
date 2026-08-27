@@ -32,7 +32,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #001821;
-  background: url(../img/hero.png) top center no-repeat, url(../img/about.png) bottom 150px center no-repeat;
+  background: url(../img/backgrounds/hero.png) top center no-repeat, url(../img/backgrounds/about.png) bottom 150px center no-repeat;
 }
 
 .maincontent {
@@ -110,7 +110,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/bg.png) center bottom/cover no-repeat;
+  background: url(../img/backgrounds/bg.png) center bottom/cover no-repeat;
 }
 
 .central {
@@ -257,7 +257,6 @@ img {
   }
 }
 .logo__img {
-  position: relative;
   width: 85px;
   height: 36px;
 }
@@ -385,7 +384,7 @@ img {
 }
 .hero__inner {
   min-height: 412px;
-  background: url(../img/headline-services.png) center top no-repeat;
+  background: url(../img/backgrounds/headline-services.png) center top no-repeat;
   position: relative;
 }
 .hero__container-inner {
@@ -533,8 +532,7 @@ img {
   position: relative;
 }
 .tours__title::after {
-  content: url(../img/flame.png);
-  position: absolute;
+  content: url(../img/icons/flame.png);
   margin-left: 10px;
 }
 
@@ -612,7 +610,7 @@ img {
   display: flex;
   gap: 13px;
 }
-.offers__date-item img {
+.offers__date-img {
   width: 26px;
   height: 26px;
 }
@@ -632,6 +630,11 @@ img {
 }
 .offers__btn {
   margin-bottom: 20px;
+}
+
+.meal-img {
+  width: 36px;
+  height: 26px;
 }
 
 .news__list {
@@ -753,7 +756,7 @@ img {
   display: block;
   width: 488px;
   height: 502px;
-  background: url(../img/gates.png) center center/cover no-repeat;
+  background: url(../img/illustrations/gates.png) center center/cover no-repeat;
 }
 @media screen and (max-width: 768px) {
   .about__content::before {
@@ -761,7 +764,7 @@ img {
   }
 }
 .about__description {
-  background: url(../img/mountains.png) center center/cover no-repeat;
+  background: url(../img/illustrations/mountains.png) center center/cover no-repeat;
   position: absolute;
   max-width: 781px;
   width: 100%;
@@ -1011,7 +1014,7 @@ img {
   display: block;
   width: 30px;
   height: 30px;
-  background: url(../img/vkblue.png) center/contain no-repeat;
+  background: url(../img/icons/vkblue.png) center/contain no-repeat;
   margin-left: 10px;
 }
 @media screen and (max-width: 480px) {
@@ -1090,7 +1093,7 @@ img {
 }
 
 .banner-img {
-  background: url(../img/rectangle.png) center/cover no-repeat;
+  background: url(../img/backgrounds/rectangle.png) center/cover no-repeat;
   min-height: 353px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,15 +1114,15 @@ img {
 }
 .banner-img::after {
   content: "";
-  background: url(../img/couple.png) bottom right 30%/contain no-repeat;
+  background: url(../img/illustrations/couple.png) bottom right 30%/contain no-repeat;
   min-height: 363px;
   min-width: 100vw;
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .banner-img::after {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/couple.png) bottom right 30%/contain no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/couple.png) bottom right 30%/contain no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/illustrations/couple.png) bottom right 30%/contain no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/illustrations/couple.png) bottom right 30%/contain no-repeat;
   }
 }
 .banner-img__content {
@@ -1365,28 +1368,28 @@ img {
   text-decoration: none;
 }
 .socials__link--telegram {
-  background-image: url("../img/telegram.png");
+  background-image: url("../img/icons/telegram.png");
 }
 .socials__link--telegram:hover {
-  background-image: url("../img/telegram-light.png");
+  background-image: url("../img/icons/telegram-light.png");
 }
 .socials__link--vk {
-  background-image: url("../img/vk.png");
+  background-image: url("../img/icons/vk.png");
 }
 .socials__link--vk:hover {
-  background-image: url("../img/vk-light.png");
+  background-image: url("../img/icons/vk-light.png");
 }
 .socials__link--facebook {
-  background-image: url("../img/facebook.png");
+  background-image: url("../img/icons/facebook.png");
 }
 .socials__link--facebook:hover {
-  background-image: url("../img/facebook-light.png");
+  background-image: url("../img/icons/facebook-light.png");
 }
 .socials__link--instagram {
-  background-image: url("../img/instagram.png");
+  background-image: url("../img/icons/instagram.png");
 }
 .socials__link--instagram:hover {
-  background-image: url("../img/instagram-light.png");
+  background-image: url("../img/icons/instagram-light.png");
 }
 
 .dropdown__footer {

@@ -1,5 +1,5 @@
 .banner-img {
-  background: url(../img/rectangle.png) center / cover no-repeat;
+  background: url(../img/backgrounds/rectangle.png) center / cover no-repeat;
   min-height: 353px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 
   &::after {
     content: '';
-    background: url(../img/couple.png) bottom right 30% / contain no-repeat;
+    background: url(../img/illustrations/couple.png) bottom right 30% / contain no-repeat;
     min-height: 363px;
     min-width: 100vw;
     position: absolute;
@@ -19,7 +19,7 @@
     @include tablets {
       background:
         linear-gradient(#0006, #0006),
-        url(../img/couple.png) bottom right 30% / contain no-repeat;
+        url(../img/illustrations/couple.png) bottom right 30% / contain no-repeat;
     }
   }
 

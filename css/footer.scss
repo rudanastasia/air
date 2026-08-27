@@ -72,10 +72,10 @@
 
     @each $network in telegram, vk, facebook, instagram {
       &--#{$network} {
-        background-image: url('../img/#{$network}.png');
+        background-image: url('../img/icons/#{$network}.png');
 
         &:hover {
-          background-image: url('../img/#{$network}-light.png');
+          background-image: url('../img/icons/#{$network}-light.png');
         }
       }
     }

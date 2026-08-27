@@ -3,8 +3,7 @@
     position: relative;
 
     &::after {
-      content: url(../img/flame.png);
-      position: absolute;
+      content: url(../img/icons/flame.png);
       margin-left: 10px;
     }
   }
@@ -65,11 +64,11 @@
   &__date-item {
     display: flex;
     gap: 13px;
+  }
 
-    & img {
-      width: 26px;
-      height: 26px;
-    }
+  &__date-img {
+    width: 26px;
+    height: 26px;
   }
 
   &__date-text {
@@ -90,4 +89,9 @@
   &__btn {
     margin-bottom: 20px;
   }
+}
+
+.meal-img {
+  width: 36px;
+  height: 26px;
 }
