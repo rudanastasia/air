@@ -1,23 +1,28 @@
 .breadcrumbs {
+  position: absolute;
+  bottom: 0;
+
   &__list {
     display: flex;
     align-items: center;
     margin-bottom: 23px;
+    gap: 5px;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    padding-right: 2px;
+    color: rgba(154, 154, 154, 1);
+    font-size: 14px;
 
     &--active {
-      .link {
-        font-weight: 700;
-      }
+      font-weight: 700;
+      text-decoration: underline;
     }
 
     &::after {
       content: '/';
+      margin-left: 5px;
     }
 
     &:last-child {
@@ -28,13 +33,10 @@
   }
 
   &__link {
-    width: 60px;
-    height: 19px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: none;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

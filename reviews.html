@@ -1,259 +1,297 @@
 <!DOCTYPE html>
 <html lang="en,ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Отзывы Air Asia</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <section class="top-line">
-            <div class="container top-line__container">
-             <header class="header">
-                <a href="/" class="logo">
-                    <img src="http://rudanastasia.github.io/air/img/logo.png" alt="Air Asia logo" class="logo__img">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="/" class="menu__link">Главная</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="https://rudanastasia.github.io/air/services.html" class="menu__link">Услуги</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Отзывы</a>
-                        </li>
-                    </ul>
-                </nav>                    
-                    <address class="contacts">
-                        <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
-                        <div class="dropdown__time dropdown__time--active">
-         <contacts class="dropdown__title dropdown__title--active">График работы</contacts>
-         <div class="schedule">
-            <p>пн-вс: 09:00 - 20:00</p>
-            <p>Обед: 14:00-14:30</p>
-         </div>
-        </div> 
-                    </address>
-             </header>
-             <h1 class="page__title">Отзывы</h1>
-             <nav class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Главная</a>
-                </li>
-                <li class="breadcrumbs__item breadcrumbs__item--active">
-                    <a href="#" class="breadcrumbs__link">Отзывы</a>
-                </li>
-             </nav>
-            </div>   
-        </section>
-        <main class="page-content">
-            <div class="container">
-                <ul class="reviews">
-                    <li class="reviews__item review">
-                        <div class="review__header">
-                            <div class="review__photo">
-                                <div class="avatar">
-                                    <img src="http://rudanastasia.github.io/air/img/ivan.png" alt="avatar" class="avatar__img">
+        <div class="maincontent">
+            <section class="hero__inner">
+                <div class="container hero__container hero__container-inner">
+                    <header class="header">
+                        <a href="./" class="logo">
+                            <img src="./img/logo.png" alt="Air Asia logo" class="logo__img">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="./" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="./services.html" class="menu__link">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="./reviews.html" class="menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <address class="contacts">
+                            <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+                            <div class="dropdown__time dropdown__time--active">
+                                <contacts class="dropdown__title dropdown__title--active">График работы</contacts>
+                                <div class="schedule">
+                                    <p>пн-вс: 09:00 - 20:00</p>
+                                    <p>Обед: 14:00-14:30</p>
                                 </div>
                             </div>
-                            <div class="review__userdata">
-                                <a href="#" class="review__user">Иван Петрович</a>
-                                <ul class="review__tags">
-                                    <li class="review__tag-item tag">Водопад Янг-бей</li>
-                                </ul>
-                             </div>
-                        </div>
-                        <div class="review__content">
-                            <h3 class="review__title">Крутой поход на водопады.</h3>
-                            <div class="review__content-text">
-                                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
-                            </div>
-                            <time class="review__date">Ноябрь 2019</time>
-                        </div>
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__header">
-                            <div class="review__photo">
-                                <div class="avatar">
-                                    <img src="http://rudanastasia.github.io/air/img/liz.png" alt="avatar" class="avatar__img">
-                                </div>
-                            </div>
-                            <div class="review__userdata">
-                                <a href="#" class="review__user">Лиза Сидорова</a>
-                                <ul class="review__tags">
-                                    <li class="review__tag-item tag">Тур по Тайланду</li>
-                                </ul>
-                             </div>
-                        </div>
-                        <div class="review__content">
-                            <h3 class="review__title">Интересный тур по Таю.</h3>
-                            <div class="review__content-text">
-                                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. </p>
-                            </div>
-                            <time class="review__date">Ноябрь 2019</time>
-                        </div>
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__header">
-                            <div class="review__photo">
-                                <div class="avatar">
-                                    <img src="http://rudanastasia.github.io/air/img/kate.png" alt="avatar" class="avatar__img">
-                                </div>
-                            </div>
-                            <div class="review__userdata">
-                                <a href="#" class="review__user">Екатерина Жмых</a>
-                                <ul class="review__tags">
-                                    <li class="review__tag-item tag">Тур на Остров обезьян</li>
-                                </ul>
-                             </div>
-                        </div>
-                        <div class="review__content">
-                            <h3 class="review__title">Очень понравился тур на остров обезьян.</h3>
-                            <div class="review__content-text">
-                                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
-                            </div>
-                            <time class="review__date">Ноябрь 2019</time>
-                        </div>
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__header">
-                            <div class="review__photo">
-                                <div class="avatar">
-                                    <img src="http://rudanastasia.github.io/air/img/anton.png" alt="avatar" class="avatar__img">
-                                </div>
-                            </div>
-                            <div class="review__userdata">
-                                <a href="#" class="review__user">Антон Игоревич</a>
-                                <ul class="review__tags">
-                                    <li class="review__tag-item tag">Тур по Индонезии</li>
-                                </ul>
-                             </div>
-                        </div>
-                        <div class="review__content">
-                            <h3 class="review__title">Для первого раза выбрал тур по Индонезии. И не пожалел!</h3>
-                            <div class="review__content-text">
-                                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
-                            </div>
-                            <time class="review__date">Ноябрь 2019</time>
-                        </div>
-                    </li>
-                </ul>
-                <div class="pager pager--service">
-                    <div class="pager__display pager__display--service">Страница 1 из 7</div>
-                    <ul class="pager__list">
-                        <li class="pager__item pager__item--active"><a href="#" class="pager__link">1</a></li>
-                        <li class="pager__item"><a href="#" class="pager__link">2</a></li>
-                        <li class="pager__item"><a href="#" class="pager__link">3</a></li>
-                        <li class="pager__item"><a href="#" class="pager__link">4</a></li>
-                        <li class="pager__item"><a href="#" class="pager__link">5</a></li>
-                        <li class="pager__item"><a href="#" class="pager__link">6</a></li>
-                        <li class="pager__item"><a href="#" class="pager__link">7</a></li>
-                    </ul>
+                        </address>
+                    </header>
+                    <div class="hero__content-inner">
+                        <h1 class="hero__title">Отзывы</h1>
+                    </div>
+                    <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="./" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item breadcrumbs__item--active">
+                                Отзывы
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </main>        
-                <section class="separator">
-                    <div class="container">
-                        <div class="separator__content">
-                            <h2 class="separator__title">Подберем тур по вашим пожеланиям</h2>
-                        </div>
-                    </div>
-                </section>
-                <section class="inner-section inner-section--bg--grey">
-                    <div class="container">
-                        <h2 class="inner-section__title">Оставьте отзыв</h2>
-                        <form class="form">
-                            <div class="form__row">
-                                <input type="text" placeholder="ФИО" class="form__input">
-                                <input type="text" placeholder="Ссылка на профиль VK" class="form__input">
-                            </div>
-                            <div class="form__row">
-                                <textarea class="form__input form__input--textarea" placeholder="Напишите свой честный отзыв ;)"></textarea>
-                            </div>
-                            <div class="form__contols">
-                                <div class="form__controls-title">Какими услугами компании пользуетесь?</div>
-                                <div class="form__checkes">
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Остров обезьян</div>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Тур по Тайланду</div>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Водопад Янг-бей</div>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Тур по Индонезии</div>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Никакими</div>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Тур по Бали</div>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="" class="form__check" id="">
-                                        <div class="form__check-text">Другое</div>
-                                    </label>
+            </section>
+            <section class="section section--light">
+                <div class="container">
+                    <ul class="reviews__list">
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__photo">
+                                    <div class="avatar">
+                                        <img src="./img/ivan.png" alt="avatar" class="avatar__img">
+                                    </div>
+                                </div>
+                                <div class="review__userdata">
+                                    <a href="#" class="review__user">Иван Петрович</a>
+                                    <ul class="review__tags">
+                                        <li class="review__tag-item tag">Водопад Янг-бей</li>
+                                        <li class="review__tag-item tag">Тур на Остров обезьян</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="form__btns">
-                                <button type="reset" class="btn__reset btn__reset--active">Очистить</button>
-                                <button type="submit" class="btn__submit btn__submit--active">Отправить</button>
+                            <div class="review__content">
+                                <h3 class="review__title">Крутой поход на водопады.</h3>
+                                <div class="review__content-text">
+                                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько
+                                        абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+                                        оратору
+                                        отточить навык публичных выступлений в домашних условиях. При создании
+                                        генератора мы
+                                        использовали небезизвестный универсальный код речей.</p>
+                                </div>
+                                <time class="review__date">Ноябрь 2019</time>
                             </div>
-                        </form>
+                        </li>
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__photo">
+                                    <div class="avatar">
+                                        <img src="./img/liz.png" alt="avatar" class="avatar__img">
+                                    </div>
+                                </div>
+                                <div class="review__userdata">
+                                    <a href="#" class="review__user">Лиза Сидорова</a>
+                                    <ul class="review__tags">
+                                        <li class="review__tag-item tag">Тур по Тайланду</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <h3 class="review__title">Интересный тур по Таю.</h3>
+                                <div class="review__content-text">
+                                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько
+                                        абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+                                        оратору
+                                        отточить навык публичных выступлений в домашних условиях. При создании
+                                        генератора мы
+                                        использовали небезизвестный универсальный код речей. </p>
+                                </div>
+                                <time class="review__date">Ноябрь 2019</time>
+                            </div>
+                        </li>
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__photo">
+                                    <div class="avatar">
+                                        <img src="./img/kate.png" alt="avatar" class="avatar__img">
+                                    </div>
+                                </div>
+                                <div class="review__userdata">
+                                    <a href="#" class="review__user">Екатерина Жмых</a>
+                                    <ul class="review__tags">
+                                        <li class="review__tag-item tag">Тур на Остров обезьян</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <h3 class="review__title">Очень понравился тур на остров обезьян.</h3>
+                                <div class="review__content-text">
+                                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько
+                                        абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+                                        оратору
+                                        отточить навык публичных выступлений в домашних условиях. При создании
+                                        генератора мы
+                                        использовали небезизвестный универсальный код речей. Текст генерируется абзацами
+                                        случайным образом от двух до десяти предложений в абзаце, что позволяет сделать
+                                        текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                                </div>
+                                <time class="review__date">Ноябрь 2019</time>
+                            </div>
+                        </li>
+                        <li class="reviews__item review">
+                            <div class="review__header">
+                                <div class="review__photo">
+                                    <div class="avatar">
+                                        <img src="./img/anton.png" alt="avatar" class="avatar__img">
+                                    </div>
+                                </div>
+                                <div class="review__userdata">
+                                    <a href="#" class="review__user">Антон Игоревич</a>
+                                    <ul class="review__tags">
+                                        <li class="review__tag-item tag">Тур по Индонезии</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="review__content">
+                                <h3 class="review__title">Для первого раза выбрал тур по Индонезии. И не пожалел!</h3>
+                                <div class="review__content-text">
+                                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько
+                                        абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+                                        оратору
+                                        отточить навык публичных выступлений в домашних условиях. При создании
+                                        генератора мы
+                                        использовали небезизвестный универсальный код речей.</p>
+                                </div>
+                                <time class="review__date">Ноябрь 2019</time>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pager pager--dark">
+                        <div class="pager__display">Страница 1 из 7</div>
+                        <ul class="pager__list">
+                            <li class="pager__item pager__item--active"><a href="#" class="pager__link">1</a></li>
+                            <li class="pager__item"><a href="#" class="pager__link">2</a></li>
+                            <li class="pager__item"><a href="#" class="pager__link">3</a></li>
+                            <li class="pager__item"><a href="#" class="pager__link">4</a></li>
+                            <li class="pager__item"><a href="#" class="pager__link">5</a></li>
+                            <li class="pager__item"><a href="#" class="pager__link">6</a></li>
+                            <li class="pager__item"><a href="#" class="pager__link">7</a></li>
+                        </ul>
                     </div>
-                </section>
-        <footer class="inner-footer">
-            <div class="container inner-footer__container">
-                <div class="footer footer-container__section">
-                    <a href="/" class="logo">
-                        <img src="http://rudanastasia.github.io/air/img/logo.png" alt="Air Asia logo" class="logo__img">
+                </div>
+            </section>
+            <section class="banner-img">
+                <div class="container">
+                    <div class="banner-img__content">
+                        <h2 class="section__title banner-img__title">Подберем тур по вашим пожеланиям</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--light-grey">
+                <div class="container">
+                    <h2 class="section__title section__title--dark">Оставьте отзыв</h2>
+                    <form class="form">
+                        <div class="form__row">
+                            <input id="name" type="text" name="name" placeholder="ФИО" class="form__input">
+                            <input id="social-link" type="text" name="social-link" placeholder="Ссылка на профиль VK"
+                                class="form__input">
+                        </div>
+                        <div class="form__row">
+                            <textarea id="message" class="form__input form__input-textarea" name="message"
+                                placeholder="Напишите свой честный отзыв ;)"></textarea>
+                        </div>
+                        <div class="form__controls">
+                            <div class="form__controls-title">Какими услугами компании пользуетесь?</div>
+                            <div class="form__checkes">
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="monkeys-island">
+                                    <div class="form__check-text">Остров обезьян</div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="tayland">
+                                    <div class="form__check-text">Тур по Тайланду</div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="young-bei">
+                                    <div class="form__check-text">Водопад Янг-бей</div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="indonesia">
+                                    <div class="form__check-text">Тур по Индонезии</div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="nothing">
+                                    <div class="form__check-text">Никакими</div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="bali">
+                                    <div class="form__check-text">Тур по Бали</div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="used-service" class="form__check" id="another">
+                                    <div class="form__check-text">Другое</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__bttns">
+                            <button type="reset" class="btn btn__reset">Очистить</button>
+                            <button type="submit" class="btn btn__submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container footer__container footer__container-inner">
+                <div class="footer__content">
+                    <a href="./" class="logo footer__logo">
+                        <img src="./img/logo.png" alt="Air Asia logo" class="logo__img">
                     </a>
-                    <nav class="menu">
+                    <nav class="menu footer__menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
+                                <a href="./" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Услуги</a>
+                                <a href="./services.html" class="menu__link">Услуги</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
+                                <a href="./reviews.html" class="menu__link">Отзывы</a>
                             </li>
                         </ul>
                     </nav>
                     <ul class="socials">
-                        <li class="socials__item socials__item--icon--telegram">
-                            <a href="#" class="socials__link"></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--telegram"></a>
                         </li>
-                        <li class="socials__item socials__item--icon--vk">
-                            <a href="#" class="socials__link"></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--vk"></a>
                         </li>
-                        <li class="socials__item socials__item--icon--facebook">
-                            <a href="#" class="socials__link"></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--facebook"></a>
                         </li>
-                        <li class="socials__item socials__item--icon--instagram">
-                            <a href="#" class="socials__link"></a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--instagram"></a>
                         </li>
-                    </ul>                    
-                        <address class="contacts">
-                            <div class="dropdown__footer">Бесплатный звонок по России</div>
-                            <a href="tel:+78007003030" class="contacts__footer">8 800 700 30 30</a>
-                        </address>
+                    </ul>
+                    <address class="contacts footer__contacts">
+                        <div class="dropdown__footer">Бесплатный звонок по России</div>
+                        <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+                    </address>
                 </div>
             </div>
         </footer>
     </div>
 </body>
+
 </html>

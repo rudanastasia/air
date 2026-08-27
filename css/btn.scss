@@ -8,45 +8,44 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 18px 40px;
+  cursor: pointer;
 
   &:hover {
     background-color: white;
     color: #f5170e;
     border: 1px solid #f5170e;
   }
+
+  &__reset {
+    background: #2b2b2b;
+    color: white;
+
+    @include phones {
+      width: 100%;
+    }
+  }
+
+  &__submit {
+    background: #f5170e;
+    border-color: #f5170e;
+    color: white;
+
+    @include phones {
+      width: 100%;
+    }
+  }
 }
 
-.btn__service {
-  background: #f5170e;
-  border-radius: 35px;
-  width: 166px;
-  height: 56px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 25px;
+.form__bttns {
   display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0px 38px;
-  color: white;
-  margin: 14px 22px;
+  justify-content: flex-end;
+  gap: 20px;
 
-  &--active {
-    &:hover {
-      background-color: white;
-      border-color: rebeccapurple;
-      color: #f5170e;
-      border: 1px solid #f5170e;
-      border-radius: 35px;
-      text-transform: uppercase;
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 19px;
-    }
+  @include tablets {
+    justify-content: center;
+  }
+
+  @include phones {
+    flex-direction: column;
   }
 }

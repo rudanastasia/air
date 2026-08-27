@@ -1,0 +1,50 @@
+.banner-img {
+  background: url(../img/rectangle.png) center / cover no-repeat;
+  min-height: 353px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    background: url(../img/couple.png) bottom right 30% / contain no-repeat;
+    min-height: 363px;
+    min-width: 100vw;
+    position: absolute;
+
+    @include tablets {
+      background:
+        linear-gradient(#0006, #0006),
+        url(../img/couple.png) bottom right 30% / contain no-repeat;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    font-size: 48px;
+    line-height: 1.2;
+
+    @include tablets {
+      font-size: 38px;
+    }
+
+    @include phones {
+      font-size: 28px;
+    }
+  }
+}

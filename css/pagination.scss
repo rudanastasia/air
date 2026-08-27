@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 54px;
   text-align: center;
+  gap: 25px;
 
-  &--service {
-    padding-left: 27px;
-    margin-bottom: 61px;
+  @include phones {
+    flex-direction: column;
+  }
+
+  &--dark {
     color: black;
 
     .pager__item {
@@ -24,35 +26,17 @@
     }
   }
 
-  &__diplay,
   &__list {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  &__display {
     display: flex;
-    align-items: center;
-    margin-left: 38px;
-    margin-right: 26px;
-    padding-bottom: 7px;
+    gap: 5px;
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-  }
-
-  &__list {
-    width: 250px;
-    margin-right: 19px;
+    @include phones {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {
-    display: inline-block;
-    vertical-align: middle;
-
     &:hover {
       background-color: #f5170e;
       border-radius: 50%;

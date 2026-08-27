@@ -1,9 +1,16 @@
 .reviews {
-  column-count: 2;
-  column-gap: 30px;
+  &__list {
+    column-count: 2;
+    gap: 30px;
+
+    @include tablets {
+      column-count: 1;
+    }
+  }
 
   &__item {
     margin-bottom: 20px;
+    flex: 1;
   }
 }
 
@@ -12,45 +19,84 @@
   flex-direction: column;
   padding: 50px 30px;
   background: #f4f5f5;
+  gap: 30px;
 
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: 31px;
+    gap: 40px;
+
+    @include phones {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+
+  &__userdata {
+    display: flex;
+    flex-direction: column;
+
+    @include tablets {
+      align-items: center;
+    }
   }
 
   &__user {
-    display: flex;
-    align-items: center;
     font-size: 24px;
     font-weight: bold;
     color: #4d76a1;
-    margin-left: 19px;
-    margin-top: 7px;
+    display: flex;
+    align-items: center;
 
     &::after {
-      content: url(http://rudanastasia.github.io/air/img/vkblue.png);
-      height: 29px;
-      margin-left: 9px;
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url(../img/vkblue.png) center / contain no-repeat;
+      margin-left: 10px;
+    }
+
+    @include phones {
+      font-size: 16px;
     }
   }
 
   &__tags {
     display: flex;
     align-items: flex-start;
+    margin-top: 15px;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    @include tablets {
+      justify-content: center;
+    }
   }
 
   &__title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 23px;
-    line-height: 42px;
+    line-height: 1.2;
+
+    @include tablets {
+      font-size: 24px;
+    }
+
+    @include phones {
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
   }
 
   &__content-text {
-    margin-bottom: 48px;
+    margin-bottom: 25px;
     line-height: 27px;
-    font-size: 16px;
   }
 
   &__date {
@@ -60,8 +106,9 @@
 }
 
 .avatar {
-  width: 140px;
-  height: 140px;
+  max-width: 140px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -72,51 +119,5 @@
   padding: 8px 16px;
   border-radius: 35px;
   background: #b9eae4;
-  margin-left: 20px;
-  height: 35px;
-  margin-top: 11px;
-  display: inline-block;
-}
-
-.separator {
-  background: url(http://rudanastasia.github.io/air/img/rectangle.png) no-repeat;
-  height: 353px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-size: cover;
-
-  &__title {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 65.37px;
-    display: flex;
-    align-items: center;
-
-    &::after {
-      content: '';
-      background: url(http://rudanastasia.github.io/air/img/couple.png);
-      height: 363px;
-      width: 1920px;
-      background-repeat: no-repeat;
-      background-position: bottom right 12%;
-      margin-top: -10px;
-    }
-  }
-}
-
-.inner-section__title {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1.1;
-  color: black;
-  margin-bottom: 61px;
-}
-
-.inner-section--bg--grey {
-  background: #f4f5f5;
-  padding: 71px 0;
-  height: 799px;
+  white-space: nowrap;
 }
