@@ -91,5 +91,10 @@
   &__img {
     width: 226px;
     max-width: 100%;
+    filter: grayscale(1);
+
+    &:hover {
+      filter: grayscale(0);
+    }
   }
 }

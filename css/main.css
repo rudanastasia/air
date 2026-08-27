@@ -896,6 +896,12 @@ img {
 .partners__img {
   width: 226px;
   max-width: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+.partners__img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .reviews__list {
