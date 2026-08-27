@@ -1,7 +1,8 @@
 .btn {
   background: #f5170e;
   border-radius: 35px;
-  width: 166px;
+  max-width: 166px;
+  width: 100%;
   height: 56px;
   font-weight: 700;
   font-size: 14px;
@@ -9,6 +10,7 @@
   text-decoration: none;
   padding: 18px 40px;
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     background-color: white;
