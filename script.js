@@ -182,3 +182,163 @@ if (reviewsSection) {
 
   showPage(currentPage);
 }
+
+////
+////Работа формы отправки отзывов////
+////
+const myForm = document.querySelector('#myForm');
+const sendButton = document.querySelector('#sendButton');
+
+const socialLink = document.querySelector('#social-link');
+const nameInput = document.querySelector('#name');
+const messageInput = document.querySelector('#message');
+
+const servicesControls = myForm.querySelector('.form__controls');
+const servicesError = servicesControls.nextElementSibling;
+
+const myModal = document.querySelector('#myModal');
+const modalText = myModal.querySelector('.modal__body p');
+const modalButton = myModal.querySelector('.btn-modal');
+
+//======Поля ввода======
+function showError(input) {
+  input.nextElementSibling.style.display = 'block';
+  input.classList.add('input-error');
+}
+
+function hideError(input) {
+  input.nextElementSibling.style.display = 'none';
+  input.classList.remove('input-error');
+}
+
+//======Модальное окно======
+function showModal(message) {
+  modalText.textContent = message;
+  myModal.style.display = 'block';
+}
+
+function hideModal() {
+  myModal.style.display = 'none';
+}
+
+//======Закрытие модального окна======
+modalButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  hideModal();
+});
+
+myModal.addEventListener('click', (e) => {
+  if (e.target === myModal) {
+    hideModal();
+  }
+});
+
+sendButton.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  let isValid = true;
+
+  //=====Валидация VK======
+  const link = socialLink.value.trim();
+
+  if (link !== '' && !/^https:\/\/(www\.)?vk\.ru\/id\d+$/.test(link)) {
+    showError(socialLink);
+    isValid = false;
+  } else {
+    hideError(socialLink);
+  }
+
+  //=====Валидация имени======
+  const name = nameInput.value.trim();
+
+  if (name === '' || name.length < 2) {
+    showError(nameInput);
+    isValid = false;
+  } else {
+    hideError(nameInput);
+  }
+
+  //=====Валидация отзыва======
+  const message = messageInput.value.trim();
+
+  if (message === '' || message.length < 10) {
+    showError(messageInput);
+    isValid = false;
+  } else {
+    hideError(messageInput);
+  }
+
+  //=====Валидация услуг======
+  const services = myForm.querySelectorAll('input[name="used-service"]:checked');
+
+  if (services.length === 0) {
+    servicesError.style.display = 'block';
+    isValid = false;
+  } else {
+    servicesError.style.display = 'none';
+  }
+
+  //=====Отправка формы======
+  if (isValid) {
+    fetch('https://formspree.io/f/xojgoeee', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+      },
+      body: new FormData(myForm),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Ошибка отправки формы');
+        }
+
+        return response.json();
+      })
+      .then((data) => {
+        console.log('Ваш отзыв успешно отправлен:', data);
+
+        showModal('Ваш отзыв успешно отправлен');
+
+        myForm.reset();
+      })
+      .catch((error) => {
+        console.error('Ошибка отправки:', error);
+
+        showModal('Возникла ошибка, повторите попытку');
+      });
+  }
+});
+
+// ===== Проверка ввода ссылки VK =====
+socialLink.addEventListener('input', (e) => {
+  const value = e.target.value.trim();
+
+  if (value === '') {
+    e.target.setCustomValidity('');
+    e.target.classList.remove('input-error');
+    return;
+  }
+
+  if (!/^https:\/\/(www\.)?vk\.ru\/id\d+$/.test(value)) {
+    e.target.setCustomValidity('Введите ссылку на профиль VK');
+    e.target.classList.add('input-error');
+  } else {
+    e.target.setCustomValidity('');
+    e.target.classList.remove('input-error');
+  }
+});
+
+// ===== Органичение символов ввода для имени =====
+nameInput.addEventListener('keydown', (event) => {
+  const allowedKeys = ['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight', 'Home', 'End'];
+
+  if (allowedKeys.includes(event.key)) {
+    return;
+  }
+
+  if (/^[a-zA-Zа-яА-ЯёЁ ]$/.test(event.key)) {
+    return;
+  }
+
+  event.preventDefault();
+});

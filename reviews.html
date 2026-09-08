@@ -315,15 +315,25 @@
             <section class="section section--light-grey">
                 <div class="container">
                     <h2 class="section__title section__title--dark">Оставьте отзыв</h2>
-                    <form class="form">
+                    <form id="myForm" class="form">
                         <div class="form__row">
-                            <input id="name" type="text" name="name" placeholder="ФИО" class="form__input">
-                            <input id="social-link" type="text" name="social-link" placeholder="Ссылка на профиль VK"
-                                class="form__input">
+                            <div class="input-wrapper">
+                                <input id="name" type="text" name="username" placeholder="Ваше имя" class="form__input"
+                                    autocomplete="on" required>
+                                <div class="error">Введите имя длиной не менее 2 символов</div>
+                            </div>
+                            <div class="input-wrapper">
+                                <input id="social-link" type="url" name="link" placeholder="Ссылка на профиль VK"
+                                    class="form__input" autocomplete="on">
+                                <div class="error">Введите ссылку вида https://vk.ru/id123</div>
+                            </div>
                         </div>
                         <div class="form__row">
-                            <textarea id="message" class="form__input form__input-textarea" name="message"
-                                placeholder="Напишите свой честный отзыв ;)"></textarea>
+                            <div class="input-wrapper">
+                                <textarea id="message" class="form__input form__input-textarea" name="message"
+                                    placeholder="Напишите свой честный отзыв ;)" required></textarea>
+                                <div class="error">Ваш отзыв должен быть не менее 10 символов</div>
+                            </div>
                         </div>
                         <div class="form__controls">
                             <div class="form__controls-title">Какими услугами компании пользуетесь?</div>
@@ -358,9 +368,10 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="error">Выберите хотя бы одну услугу</div>
                         <div class="form__bttns">
-                            <button type="reset" class="btn btn__reset">Очистить</button>
-                            <button type="submit" class="btn btn__submit">Отправить</button>
+                            <button type="reset" id="resetForm" class="btn btn__reset">Очистить</button>
+                            <button type="submit" id="sendButton" class="btn btn__submit">Отправить</button>
                         </div>
                     </form>
                 </div>
@@ -406,6 +417,16 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal__content">
+            <div class="modal__body">
+                <p>Ваш отзыв успешно отправлен</p>
+            </div>
+            <div class="modal__button-container">
+                <a href="#" class="btn btn-modal">Закрыть</a>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

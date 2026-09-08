@@ -33,7 +33,6 @@
 
   &__input-textarea {
     min-height: 233px;
-    margin-bottom: 36px;
   }
 
   &__controls {
@@ -85,4 +84,21 @@
       text-align: center;
     }
   }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.error {
+  color: rgb(154, 154, 154);
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.input-error {
+  border: 1px solid red;
 }

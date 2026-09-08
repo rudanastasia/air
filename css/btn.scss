@@ -49,5 +49,10 @@
 
   @include phones {
     flex-direction: column;
+    align-items: center;
   }
+}
+
+.btn-modal {
+  color: white;
 }
