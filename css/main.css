@@ -225,6 +225,11 @@ img {
   height: 36px;
 }
 
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
 .menu__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -318,6 +323,99 @@ img {
 
 .schedule {
   display: none;
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .hamburger {
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+  }
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    top: 8px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333537;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 30px 40px 0;
+  z-index: 3;
+}
+.mobile-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  border-left: 1px solid grey;
+}
+.mobile-menu__item {
+  padding-left: 20px;
+}
+.mobile-menu__link {
+  font-size: 20px;
+}
+.mobile-menu__contacts {
+  border-top: 1px solid grey;
+  padding: 10px 0 0 0;
+}
+.mobile-menu__phone {
+  font-size: 20px;
+  white-space: normal;
+}
+.mobile-menu__schedule {
+  color: grey;
+}
+.mobile-menu__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border: none;
+  background-color: #333537;
+}
+.mobile-menu__close::before, .mobile-menu__close::after {
+  content: "";
+  background-color: #ffffff;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+}
+.mobile-menu__close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.mobile-menu__close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .hero {

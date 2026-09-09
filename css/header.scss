@@ -22,6 +22,10 @@
 }
 
 .menu {
+  @include phones {
+    display: none;
+  }
+
   &__list {
     flex-wrap: wrap;
     justify-content: center;
