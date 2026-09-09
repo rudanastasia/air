@@ -101,7 +101,10 @@ const myModal = document.querySelector('#myModal');
 const modalText = myModal.querySelector('.modal__body p');
 const modalButton = myModal.querySelector('.btn-modal');
 
-//======Поля ввода======
+const VK_REGEX = /^https:\/\/(www\.)?vk\.ru\/id\d+$/;
+const FORMSPREE_URL = 'https://formspree.io/f/xojgoeee';
+
+//======Обработка ошибок в полях ввода======
 function showError(input) {
   input.nextElementSibling.style.display = 'block';
   input.classList.add('input-error');
@@ -110,6 +113,16 @@ function showError(input) {
 function hideError(input) {
   input.nextElementSibling.style.display = 'none';
   input.classList.remove('input-error');
+}
+
+function validateField(input, condition) {
+  if (condition) {
+    showError(input);
+    return false;
+  }
+
+  hideError(input);
+  return true;
 }
 
 //======Модальное окно======
@@ -134,102 +147,100 @@ myModal.addEventListener('click', (e) => {
   }
 });
 
-sendButton.addEventListener('click', (e) => {
-  e.preventDefault();
+//======Валидация формы======
 
+function validateForm() {
   let isValid = true;
 
-  //=====Валидация VK======
+  //=====VK======
   const link = socialLink.value.trim();
+  const isVkInvalid = link !== '' && !VK_REGEX.test(link);
 
-  if (link !== '' && !/^https:\/\/(www\.)?vk\.ru\/id\d+$/.test(link)) {
-    showError(socialLink);
+  if (!validateField(socialLink, isVkInvalid)) {
     isValid = false;
-  } else {
-    hideError(socialLink);
   }
 
-  //=====Валидация имени======
+  //=====Имя======
   const name = nameInput.value.trim();
 
-  if (name === '' || name.length < 2) {
-    showError(nameInput);
+  if (!validateField(nameInput, name === '' || name.length < 2)) {
     isValid = false;
-  } else {
-    hideError(nameInput);
   }
 
-  //=====Валидация отзыва======
+  //=====Отзыв======
   const message = messageInput.value.trim();
 
-  if (message === '' || message.length < 10) {
-    showError(messageInput);
+  if (!validateField(messageInput, message === '' || message.length < 10)) {
     isValid = false;
-  } else {
-    hideError(messageInput);
   }
 
-  //=====Валидация услуг======
+  //=====Услуги======
   const services = myForm.querySelectorAll('input[name="used-service"]:checked');
+  const servicesInvalid = services.length === 0;
 
-  if (services.length === 0) {
-    servicesError.style.display = 'block';
+  servicesError.style.display = servicesInvalid ? 'block' : 'none';
+
+  if (servicesInvalid) {
     isValid = false;
-  } else {
-    servicesError.style.display = 'none';
+  }
+  return isValid;
+}
+
+//=====Отправка формы======
+myForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  if (!validateForm()) {
+    return;
   }
 
-  //=====Отправка формы======
-  if (isValid) {
-    fetch('https://formspree.io/f/xojgoeee', {
+  sendButton.disabled = true;
+
+  try {
+    const response = await fetch(FORMSPREE_URL, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
       },
       body: new FormData(myForm),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Ошибка отправки формы');
-        }
+    });
 
-        return response.json();
-      })
-      .then((data) => {
-        console.log('Ваш отзыв успешно отправлен:', data);
+    if (!response.ok) {
+      throw new Error('Ошибка при отправке отзыва');
+    }
 
-        showModal('Ваш отзыв успешно отправлен');
+    const data = await response.json();
 
-        myForm.reset();
-      })
-      .catch((error) => {
-        console.error('Ошибка отправки:', error);
+    console.log('Спасибо, ваш отзыв успешно отправлен:', data);
 
-        showModal('Возникла ошибка, повторите попытку');
-      });
+    showModal('Спасибо, ваш отзыв успешно отправлен!');
+    myForm.reset();
+
+    [socialLink, nameInput, messageInput].forEach(hideError);
+    servicesError.style.display = 'none';
+  } catch (error) {
+    console.log('Возникла ошибка отправки:', error);
+    showModal('Возникла ошибка, повторите отправку');
+  } finally {
+    sendButton.disabled = false;
   }
 });
 
-// ===== Проверка ввода ссылки VK =====
+// ===== Проверка VK при вводе =====
 socialLink.addEventListener('input', (e) => {
   const value = e.target.value.trim();
 
-  if (value === '') {
-    e.target.setCustomValidity('');
-    e.target.classList.remove('input-error');
+  if (value === '' || VK_REGEX.test(value)) {
+    hideError(socialLink);
+    socialLink.setCustomValidity('');
     return;
   }
 
-  if (!/^https:\/\/(www\.)?vk\.ru\/id\d+$/.test(value)) {
-    e.target.setCustomValidity('Введите ссылку на профиль VK');
-    e.target.classList.add('input-error');
-  } else {
-    e.target.setCustomValidity('');
-    e.target.classList.remove('input-error');
-  }
+  showError(socialLink);
+  socialLink.setCustomValidity('Введите ссылку на профиль VK в формате https://vk.ru/id12345');
 });
 
-// ===== Органичение символов ввода для имени =====
+// =====Ограничение имени =====
 nameInput.addEventListener('keydown', (event) => {
   const allowedKeys = ['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight', 'Home', 'End'];
 
