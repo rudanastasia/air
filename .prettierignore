@@ -9,6 +9,8 @@ out
 *.min.js
 *.min.css
 *.map
+*.njk
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+src/css/main.css

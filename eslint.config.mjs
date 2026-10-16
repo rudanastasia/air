@@ -6,10 +6,12 @@ npm run format: check — проверить, правильно ли отфор
 
 import js from '@eslint/js';
 import globals from 'globals';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default defineConfig([
+  globalIgnores(['dist']),
+
   {
     files: ['**/*.{js,mjs,cjs}'],
     plugins: { js },
@@ -25,6 +27,15 @@ export default defineConfig([
       },
     },
   },
+
+  {
+    files: ['eleventy.config.js'],
+    languageOptions: {
+      sourceType: 'commonjs',
+      globals: globals.node,
+    },
+  },
+
   eslintConfigPrettier, // Отключает конфликтующие с Prettier правила
   {
     rules: {
