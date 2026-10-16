@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="maincontent">
+            {{ content | safe }}
+        </main>
+
+         {% include "partials/footer.njk" %}
+    </div>
+    
+    {% include "partials/mobile-menu.njk" %}
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>

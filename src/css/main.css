@@ -336,6 +336,9 @@ img {
     width: 25px;
     height: 3px;
     border-radius: 5px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
   }
   .hamburger::after {
     content: "";
@@ -1292,6 +1295,7 @@ img {
 }
 .form__input-textarea {
   min-height: 233px;
+  resize: none;
 }
 .form__controls {
   display: -webkit-box;
@@ -1421,6 +1425,13 @@ img {
 @media screen and (max-width: 768px) {
   .footer__menu {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .footer__contacts {

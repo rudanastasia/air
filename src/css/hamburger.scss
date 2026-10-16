@@ -8,6 +8,9 @@
     width: 25px;
     height: 3px;
     border-radius: 5px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
 
     &::after {
       content: '';
