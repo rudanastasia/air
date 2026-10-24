@@ -65,4 +65,8 @@
       transform: rotate(-45deg);
     }
   }
+
+  &.active {
+    display: flex;
+  }
 }

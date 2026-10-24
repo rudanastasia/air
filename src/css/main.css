@@ -420,6 +420,11 @@ img {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+.mobile-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .hero {
   min-height: 700px;

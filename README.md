@@ -17,20 +17,21 @@
 
 ## Страницы
 
-| Страница | Исходный шаблон | URL после сборки | Назначение |
-| --- | --- | --- | --- |
-| Welcome | `src/welcome.njk` | `welcome.html` | приветственная страница |
-| Главная | `src/index.njk` | `index.html` | информация о компании и турах |
-| Услуги | `src/services.njk` | `services.html` | список туристических услуг |
-| Отзывы | `src/reviews.njk` | `reviews.html` | отзывы и форма добавления отзыва |
+| Страница | Исходный шаблон    | URL после сборки | Назначение                       |
+| -------- | ------------------ | ---------------- | -------------------------------- |
+| Welcome  | `src/welcome.njk`  | `welcome.html`   | приветственная страница          |
+| Главная  | `src/index.njk`    | `index.html`     | информация о компании и турах    |
+| Услуги   | `src/services.njk` | `services.html`  | список туристических услуг       |
+| Отзывы   | `src/reviews.njk`  | `reviews.html`   | отзывы и форма добавления отзыва |
 
 ## Технологии
 
 - **HTML / Nunjucks** — разметка страниц и шаблоны;
 - **SCSS / CSS** — стили и адаптивная вёрстка;
-- **JavaScript (ES modules)** — интерактивные элементы;
+- **JavaScript** — конфигурационные файлы;
+- **TypeScript** — интерактивные элементы (компилируется в ES modules);
 - **Eleventy (11ty)** — сборка статического сайта;
-- **ESLint** — проверка JavaScript;
+- **ESLint** — проверка JavaScript и TypeScript;
 - **Prettier** — форматирование кода;
 - **Formspree** — обработка формы отзывов.
 
@@ -42,8 +43,8 @@
 │   ├── _includes/       # Общие шаблоны, layout и partials
 │   ├── css/             # SCSS-модули и скомпилированный CSS
 │   ├── img/             # Изображения, иконки, фоны и логотипы
-│   ├── js/
-│   │   ├── script.js    # Точка входа JavaScript
+│   ├── ts/
+│   │   ├── script.js    # Точка входа
 │   │   ├── mobile-menu.js
 │   │   ├── pagination.js
 │   │   └── form.js
@@ -56,12 +57,13 @@
 ├── eslint.config.mjs
 ├── package.json
 ├── package-lock.json
+├── tsconfig.json
 └── README.md
 ```
 
 ## Требования
 
-- Node.js и npm;
+- Node.js 22 или новее и npm;
 - зависимости проекта, устанавливаемые командой `npm install`.
 
 ## Установка и запуск
@@ -80,7 +82,7 @@ npm install
 npm start
 ```
 
-Собрать статический сайт:
+Собрать статический сайт и скомпилировать TS:
 
 ```bash
 npm run build
@@ -88,9 +90,9 @@ npm run build
 
 Eleventy берёт исходники из `src/` и помещает готовый сайт в `dist/`. Каталоги `src/img`, `src/css` и `src/js` копируются в выходную директорию без дополнительной обработки.
 
-## JavaScript
+## TypeScript
 
-Точка входа — `src/js/script.js`:
+Точка входа — `src/ts/script.ts`:
 
 ```js
 import './mobile-menu.js';
@@ -98,11 +100,11 @@ import './pagination.js';
 import './form.js';
 ```
 
-- `mobile-menu.js` — открытие и закрытие мобильного меню;
-- `pagination.js` — пагинация списков на страницах;
-- `form.js` — валидация и отправка формы отзывов.
+- `mobile-menu.ts` — открытие и закрытие мобильного меню;
+- `pagination.ts` — пагинация списков на страницах;
+- `form.ts` — валидация и отправка формы отзывов.
 
-Общий шаблон подключает скрипт как ES module.
+Импорты пишутся с расширением `.js`, потому что браузер загружает уже скомпилированные файлы. Общий шаблон подключает скрипт как ES module из `dist/js/script.js`.
 
 ## Стили
 
@@ -112,11 +114,11 @@ SCSS-модули находятся в `src/css/`. Файл `src/css/main.scss`
 
 ## Форма отзывов
 
-Форма расположена на странице отзывов. Она проверяет введённые данные, включая ссылку на профиль VK, и отправляет отзыв через Formspree. Адрес endpoint Formspree задан в `src/js/form.js`; при переносе проекта на другой аккаунт Formspree обновите его там.
+Форма расположена на странице отзывов. Она проверяет введённые данные, включая ссылку на профиль VK, и отправляет отзыв через Formspree. Адрес endpoint Formspree задан в `src/ts/form.ts`; при переносе проекта на другой аккаунт Formspree обновите его там.
 
 ## Проверка качества кода
 
-Проверить JavaScript с помощью ESLint:
+Проверить JavaScript и TypeScript:
 
 ```bash
 npm run lint
@@ -140,20 +142,29 @@ npm run format:check
 npm run format
 ```
 
+Проверить типы TypeScript без сборки:
+
+```bash
+npm run typecheck
+```
+
 ## npm-скрипты
 
-| Команда | Назначение |
-| --- | --- |
-| `npm start` | запустить Eleventy в режиме разработки с локальным сервером |
-| `npm run build` | собрать сайт в `dist/` |
-| `npm run lint` | проверить JavaScript с помощью ESLint |
-| `npm run lint:fix` | автоматически исправить исправимые ошибки ESLint |
-| `npm run format` | отформатировать файлы с помощью Prettier |
-| `npm run format:check` | проверить форматирование без изменений |
+| Команда                | Назначение                                            |
+| ---------------------- | ----------------------------------------------------- |
+| `npm start`            | запустить Eleventy и tsc --watch с локальным сервером |
+| `npm run build`        | собрать сайт и скомпилировать TypeScript в dist/      |
+| `npm run build:site`   | собрать только сайт (Eleventy)                        |
+| `npm run build:ts`     | скомпилировать только TypeScript                      |
+| `npm run typecheck`    | проверить типы без создания файлов                    |
+| `npm run lint`         | проверить JavaScript и TypeScript с помощью ESLint    |
+| `npm run lint:fix`     | автоматически исправить исправимые ошибки ESLint      |
+| `npm run format`       | отформатировать файлы с помощью Prettier              |
+| `npm run format:check` | проверить форматирование без изменений                |
 
 ## Деплой
 
-Сайт состоит из статических файлов и может быть опубликован на GitHub Pages или другом статическом хостинге. Для публикации необходимо разместить содержимое собранной директории `dist/` в корне публикуемого сайта. Ссылка на демо: https://rudanastasia.github.io/air/welcome.html
+Сайт состоит из статических файлов и публикуется на GitHub Pages. При деплое через GitHub Actions выполняются проверка типов и npm run build, поэтому в dist/ попадает уже скомпилированный код. Ссылка на демо: https://rudanastasia.github.io/air/welcome.html
 
 ## Лицензия
 

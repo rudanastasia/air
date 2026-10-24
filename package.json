@@ -4,13 +4,17 @@
   "private": true,
   "description": "Air site",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit",
+    "build:ts": "tsc",
+    "build:site": "eleventy",
+    "build": "run-s build:site build:ts",
+    "start": "run-p start:site start:ts",
+    "start:site": "eleventy --serve",
+    "start:ts": "tsc --watch --preserveWatchOutput",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -30,6 +34,9 @@
     "eslint": "^10.4.1",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.6.0",
-    "prettier": "3.8.3"
+    "npm-run-all2": "^9.0.4",
+    "prettier": "3.8.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0"
   }
 }

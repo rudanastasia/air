@@ -6,6 +6,7 @@ npm run format: check — проверить, правильно ли отфор
 
 import js from '@eslint/js';
 import globals from 'globals';
+import tseslint from 'typescript-eslint';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
@@ -25,6 +26,14 @@ export default defineConfig([
         YT: 'readonly',
         ymaps3: 'readonly',
       },
+    },
+  },
+
+  {
+    files: ['**/*.ts'],
+    extends: [tseslint.configs.recommended],
+    languageOptions: {
+      globals: globals.browser,
     },
   },
 
