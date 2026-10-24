@@ -5,7 +5,7 @@ title: Услуги Air Asia
 description: Услуги Air Asia
 permalink: services.html
 ---
-
+{% from "partials/pagination.njk" import pager %}
 
             <section class="hero__inner">
                 <div class="container hero__container hero__container-inner">
@@ -94,11 +94,7 @@ permalink: services.html
                             </li>
                         </ul>
                     </div>
-                    <div class="pager pager--dark">
-                        <div class="pager__display">Страница 1 из 1</div>
-                        <ul class="pager__list"> 
-                        </ul>
-                    </div>
+                    {{ pager("pager--dark") }}
                 </div>
             </section>
             <section class="section section--light-grey">

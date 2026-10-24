@@ -4,7 +4,7 @@ title: Авиакомпания Air Asia
 description: Авиакомпания Air Asia
 permalink: index.html
 ---
-
+{% from "partials/pagination.njk" import pager %}
 
             <section class="hero">
                 <div class="container hero__container">
@@ -143,11 +143,7 @@ permalink: index.html
                             </div>
                         </li>
                     </ul>
-                    <div class="pager">
-                        <div class="pager__display">Страница 1 из 1</div>
-                        <ul class="pager__list"> 
-                        </ul>
-                    </div>
+                    {{ pager() }}
                 </div>
             </section>
             <section class="section about">

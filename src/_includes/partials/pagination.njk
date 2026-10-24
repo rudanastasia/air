@@ -1,0 +1,6 @@
+{% macro pager(modifier = "") %}
+    <div class="pager{% if modifier %} {{ modifier }}{% endif %}">
+        <div class="pager__display">Страница 1 из 1</div>
+        <ul class="pager__list"></ul>
+    </div>
+{% endmacro %}
