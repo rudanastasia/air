@@ -1,7 +1,13 @@
-function initPagination({ section, itemsSelector, itemsPerPage = 2 }) {
-  const items = Array.from(section.querySelectorAll(itemsSelector));
-  const pagerList = section.querySelector('.pager__list');
-  const pagerDisplay = section.querySelector('.pager__display');
+interface PaginationOptions {
+  section: HTMLElement;
+  itemsSelector: string;
+  itemsPerPage?: number;
+}
+
+function initPagination({ section, itemsSelector, itemsPerPage = 2 }: PaginationOptions): void {
+  const items = Array.from(section.querySelectorAll<HTMLElement>(itemsSelector));
+  const pagerList = section.querySelector<HTMLElement>('.pager__list');
+  const pagerDisplay = section.querySelector<HTMLElement>('.pager__display');
 
   if (!items.length || !pagerList || !pagerDisplay) {
     return;
@@ -10,7 +16,7 @@ function initPagination({ section, itemsSelector, itemsPerPage = 2 }) {
   const totalPages = Math.ceil(items.length / itemsPerPage);
   let currentPage = 1;
 
-  function createPager() {
+  const createPager = (): void => {
     pagerList.innerHTML = '';
 
     for (let i = 1; i <= totalPages; i++) {
@@ -24,7 +30,7 @@ function initPagination({ section, itemsSelector, itemsPerPage = 2 }) {
       const pagerLink = document.createElement('a');
       pagerLink.href = '#';
       pagerLink.classList.add('pager__link');
-      pagerLink.textContent = i;
+      pagerLink.textContent = String(i);
 
       pagerLink.addEventListener('click', (event) => {
         event.preventDefault();
@@ -34,9 +40,9 @@ function initPagination({ section, itemsSelector, itemsPerPage = 2 }) {
       pagerItem.appendChild(pagerLink);
       pagerList.appendChild(pagerItem);
     }
-  }
+  };
 
-  function showPage(page) {
+  const showPage = (page: number): void => {
     const start = (page - 1) * itemsPerPage;
     const end = start + itemsPerPage;
 
@@ -49,12 +55,12 @@ function initPagination({ section, itemsSelector, itemsPerPage = 2 }) {
     pagerDisplay.textContent = `Страница ${currentPage} из ${totalPages}`;
 
     createPager();
-  }
+  };
 
   showPage(currentPage);
 }
 
-const newsSection = document.querySelector('.section.news');
+const newsSection = document.querySelector<HTMLElement>('.section.news');
 
 if (newsSection) {
   initPagination({
@@ -64,7 +70,7 @@ if (newsSection) {
   });
 }
 
-const servicesSection = document.querySelector('.services-section');
+const servicesSection = document.querySelector<HTMLElement>('.services-section');
 
 if (servicesSection) {
   initPagination({
@@ -74,7 +80,7 @@ if (servicesSection) {
   });
 }
 
-const reviewsSection = document.querySelector('.reviews-section');
+const reviewsSection = document.querySelector<HTMLElement>('.reviews-section');
 
 if (reviewsSection) {
   initPagination({
@@ -83,3 +89,5 @@ if (reviewsSection) {
     itemsPerPage: 4,
   });
 }
+
+export {};

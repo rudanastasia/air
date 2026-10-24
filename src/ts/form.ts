@@ -1,37 +1,55 @@
+///Вспомогательная функция для проверки элементов на null///
+function queryRequired<T extends Element>(selector: string, root: ParentNode = document): T {
+  const element = root.querySelector<T>(selector);
+
+  if (!element) {
+    throw new Error(`Элемент не найден: ${selector}`);
+  }
+
+  return element;
+}
+///
+
 document.addEventListener('DOMContentLoaded', () => {
-  const myForm = document.querySelector('#myForm');
+  const myForm = document.querySelector<HTMLFormElement>('#myForm');
 
   if (!myForm) return;
 
-  const sendButton = document.querySelector('#sendButton');
+  const sendButton = queryRequired<HTMLButtonElement>('#sendButton');
 
-  const socialLink = document.querySelector('#social-link');
-  const nameInput = document.querySelector('#name');
-  const messageInput = document.querySelector('#message');
+  const socialLink = queryRequired<HTMLInputElement>('#social-link');
+  const nameInput = queryRequired<HTMLInputElement>('#name');
+  const messageInput = queryRequired<HTMLInputElement>('#message');
 
-  const servicesControls = myForm.querySelector('.form__controls');
-  const servicesError = servicesControls.nextElementSibling;
+  const servicesControls = queryRequired<HTMLElement>('.form__controls', myForm);
+  const servicesError = servicesControls.nextElementSibling as HTMLElement;
 
-  const myModal = document.querySelector('#myModal');
-  const modalText = myModal.querySelector('.modal__body p');
-  const modalButton = myModal.querySelector('.btn-modal');
+  const myModal = queryRequired<HTMLElement>('#myModal');
+  const modalText = queryRequired<HTMLElement>('.modal__body p', myModal);
+  const modalButton = queryRequired<HTMLElement>('.btn-modal', myModal);
 
   const VK_REGEX = /^https:\/\/(www\.)?vk\.ru\/id\d+$/;
   const FORMSPREE_URL = 'https://formspree.io/f/xojgoeee';
 
-  //======Обработка ошибок в полях ввода======
-  function showError(input) {
-    input.nextElementSibling.style.display = 'block';
+  ///==========================================
+  ///======Обработка ошибок в полях ввода======
+  ///==========================================
+  function getErrorElement(input: HTMLElement): HTMLElement {
+    return input.nextElementSibling as HTMLElement;
+  }
+
+  function showError(input: HTMLElement): void {
+    getErrorElement(input).style.display = 'block';
     input.classList.add('input-error');
   }
 
-  function hideError(input) {
-    input.nextElementSibling.style.display = 'none';
+  function hideError(input: HTMLElement): void {
+    getErrorElement(input).style.display = 'none';
     input.classList.remove('input-error');
   }
 
-  function validateField(input, condition) {
-    if (condition) {
+  function validateField(input: HTMLElement, hasError: boolean): boolean {
+    if (hasError) {
       showError(input);
       return false;
     }
@@ -40,13 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
     return true;
   }
 
+  //==========================
   //======Модальное окно======
-  function showModal(message) {
+  //==========================
+  function showModal(message: string): void {
     modalText.textContent = message;
     myModal.style.display = 'block';
   }
 
-  function hideModal() {
+  function hideModal(): void {
     myModal.style.display = 'none';
   }
 
@@ -62,46 +82,124 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  //======Валидация формы======
+  // =========================
+  // ===== Проверка полей ====
+  // =========================
 
-  function validateForm() {
+  // =====Валидация имени =====
+  function isValidName(value: string): boolean {
+    const name = value.trim();
+
+    return name.length >= 2 && /^[a-zA-Zа-яА-ЯёЁ ]+$/.test(name);
+  }
+
+  // Проверка итогового значения имени
+  nameInput.addEventListener('input', () => {
+    nameInput.value = nameInput.value.replace(/[^a-zA-Zа-яА-ЯёЁ ]/g, '');
+
+    const invalid = !isValidName(nameInput.value);
+
+    if (invalid) {
+      showError(nameInput);
+    } else {
+      hideError(nameInput);
+    }
+  });
+
+  // ===== Проверка VK =====
+  function isVkInvalid(value: string): boolean {
+    const link = value.trim();
+
+    return link !== '' && !VK_REGEX.test(link);
+  }
+
+  //  Проверка введенной ссылки VK
+  socialLink.addEventListener('input', () => {
+    const invalid = isVkInvalid(socialLink.value);
+
+    if (!invalid) {
+      hideError(socialLink);
+      socialLink.setCustomValidity('');
+      return;
+    }
+
+    showError(socialLink);
+    socialLink.setCustomValidity('Введите ссылку на профиль VK в формате https://vk.ru/id12345');
+  });
+
+  // ===== Проверка отзыва =====
+  function isInvalidMessage(value: string): boolean {
+    const message = value.trim();
+
+    return message === '' || message.length < 10;
+  }
+
+  messageInput.addEventListener('input', () => {
+    if (isInvalidMessage(messageInput.value)) {
+      showError(messageInput);
+    } else {
+      hideError(messageInput);
+    }
+  });
+
+  // ===== Проверка услуг =====
+  function areServicesInvalid(): boolean {
+    if (!myForm) {
+      return true;
+    }
+
+    const services = myForm.querySelectorAll<HTMLElement>('input[name="used-service"]:checked');
+
+    console.log('Выбрано услуг:', services.length);
+    const invalid = services.length === 0;
+
+    servicesError.style.display = invalid ? 'block' : 'none';
+
+    return invalid;
+  }
+
+  if (myForm) {
+    const serviceInputs = myForm.querySelectorAll<HTMLElement>('input[name="used-service"]');
+
+    serviceInputs.forEach((service) => {
+      service.addEventListener('change', () => {
+        areServicesInvalid();
+      });
+    });
+  }
+
+  //===========================
+  //======Валидация формы======
+  //===========================
+  const validateForm = (): boolean => {
     let isValid = true;
 
     //=====VK======
-    const link = socialLink.value.trim();
-    const isVkInvalid = link !== '' && !VK_REGEX.test(link);
-
-    if (!validateField(socialLink, isVkInvalid)) {
+    if (!validateField(socialLink, isVkInvalid(socialLink.value))) {
       isValid = false;
     }
 
     //=====Имя======
-    const name = nameInput.value.trim();
-
-    if (!validateField(nameInput, name === '' || name.length < 2)) {
+    if (!validateField(nameInput, !isValidName(nameInput.value))) {
       isValid = false;
     }
 
     //=====Отзыв======
-    const message = messageInput.value.trim();
-
-    if (!validateField(messageInput, message === '' || message.length < 10)) {
+    if (!validateField(messageInput, isInvalidMessage(messageInput.value))) {
       isValid = false;
     }
 
     //=====Услуги======
-    const services = myForm.querySelectorAll('input[name="used-service"]:checked');
-    const servicesInvalid = services.length === 0;
-
-    servicesError.style.display = servicesInvalid ? 'block' : 'none';
-
-    if (servicesInvalid) {
+    if (areServicesInvalid()) {
       isValid = false;
     }
-    return isValid;
-  }
 
+    return isValid;
+  };
+
+  //=========================
   //=====Отправка формы======
+  //=========================
   myForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -124,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error('Ошибка при отправке отзыва');
       }
 
-      const data = await response.json();
+      const data: unknown = await response.json();
 
       console.log('Спасибо, ваш отзыв успешно отправлен:', data);
 
@@ -140,33 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
       sendButton.disabled = false;
     }
   });
-
-  // ===== Проверка VK при вводе =====
-  socialLink.addEventListener('input', (e) => {
-    const value = e.target.value.trim();
-
-    if (value === '' || VK_REGEX.test(value)) {
-      hideError(socialLink);
-      socialLink.setCustomValidity('');
-      return;
-    }
-
-    showError(socialLink);
-    socialLink.setCustomValidity('Введите ссылку на профиль VK в формате https://vk.ru/id12345');
-  });
-
-  // =====Ограничение имени =====
-  nameInput.addEventListener('keydown', (event) => {
-    const allowedKeys = ['Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight', 'Home', 'End'];
-
-    if (allowedKeys.includes(event.key)) {
-      return;
-    }
-
-    if (/^[a-zA-Zа-яА-ЯёЁ ]$/.test(event.key)) {
-      return;
-    }
-
-    event.preventDefault();
-  });
 });
+
+export {};

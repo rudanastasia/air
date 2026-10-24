@@ -1,11 +1,13 @@
-const hamburger = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
-const closeMobileMenu = document.querySelector('.mobile-menu__close');
+const hamburger = document.querySelector<HTMLElement>('.hamburger');
+const mobileMenu = document.querySelector<HTMLElement>('.mobile-menu');
+const closeMobileMenu = document.querySelector<HTMLElement>('.mobile-menu__close');
 
-hamburger.addEventListener('click', () => {
-  mobileMenu.classList.add('active');
-});
+if (hamburger && mobileMenu && closeMobileMenu) {
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+  });
 
-closeMobileMenu.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
-});
+  closeMobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+  });
+}
