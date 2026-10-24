@@ -3,11 +3,10 @@ const mobileMenu = document.querySelector<HTMLElement>('.mobile-menu');
 const closeMobileMenu = document.querySelector<HTMLElement>('.mobile-menu__close');
 
 if (hamburger && mobileMenu && closeMobileMenu) {
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.add('active');
-  });
+  const toggleMenu = (isOpen: boolean) => {
+    mobileMenu.classList.toggle('active', isOpen);
+  };
 
-  closeMobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
-  });
+  hamburger.addEventListener('click', () => toggleMenu(true));
+  closeMobileMenu.addEventListener('click', () => toggleMenu(false));
 }
